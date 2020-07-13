@@ -1,0 +1,320 @@
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/data.py:58: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/models/basiccnn.py:53: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/models/basiccnn.py:37: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/models/basiccnn.py:141: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:89: The name tf.log is deprecated. Please use tf.math.log instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:91: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:93: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:96: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:100: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:102: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:103: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/data.py:58: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/models/basiccnn.py:53: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/models/basiccnn.py:37: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/models/basiccnn.py:141: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:89: The name tf.log is deprecated. Please use tf.math.log instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:91: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:93: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:96: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:100: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:102: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:103: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:115: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+`tf.train.start_queue_runners()` was called when no queue runners were defined. You can safely remove the call to this deprecated function.
+After 0 training step(s),loss on training batch is 114.506.The batch test accuracy = 0 , 0.03125 ，0.21875.
+After 100 training step(s),loss on training batch is 112.346.The batch test accuracy = 0.0625 , 0.1875 ，0.34375.
+After 200 training step(s),loss on training batch is 111.933.The batch test accuracy = 0.125 , 0.21875 ，0.34375.
+After 300 training step(s),loss on training batch is 111.301.The batch test accuracy = 0.03125 , 0.1875 ，0.4375.
+After 400 training step(s),loss on training batch is 108.681.The batch test accuracy = 0.09375 , 0.15625 ，0.375.
+After 500 training step(s),loss on training batch is 97.3771.The batch test accuracy = 0.1875 , 0.53125 ，0.65625.
+After 600 training step(s),loss on training batch is 79.1997.The batch test accuracy = 0.25 , 0.6875 ，0.875.
+After 700 training step(s),loss on training batch is 76.2088.The batch test accuracy = 0.3125 , 0.6875 ，0.875.
+Interrupted on request...
+Train finished...
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/data.py:58: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/models/basiccnn.py:53: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/models/basiccnn.py:37: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/models/basiccnn.py:141: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:89: The name tf.log is deprecated. Please use tf.math.log instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:91: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:93: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:96: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:100: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:102: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:103: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+From /home/fleaven/anaconda3/envs/tfp37/lib/python3.7/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+Restoring parameters from ./checkpoint_basic/trainnum_30000_-0
+Resume training ... Start from step 0 / 30000 .
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:115: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+`tf.train.start_queue_runners()` was called when no queue runners were defined. You can safely remove the call to this deprecated function.
+After 0 training step(s),loss on training batch is 70.3295.The batch test accuracy = 0.125 , 0.53125 ，0.75.
+After 100 training step(s),loss on training batch is 61.026.The batch test accuracy = 0.40625 , 0.78125 ，0.9375.
+After 200 training step(s),loss on training batch is 44.0664.The batch test accuracy = 0.5625 , 0.84375 ，0.90625.
+After 300 training step(s),loss on training batch is 31.9443.The batch test accuracy = 0.5625 , 0.90625 ，1.
+After 400 training step(s),loss on training batch is 21.2875.The batch test accuracy = 0.6875 , 0.96875 ，1.
+After 500 training step(s),loss on training batch is 36.8668.The batch test accuracy = 0.75 , 0.96875 ，0.96875.
+After 600 training step(s),loss on training batch is 22.527.The batch test accuracy = 0.75 , 0.96875 ，0.96875.
+After 700 training step(s),loss on training batch is 25.5732.The batch test accuracy = 0.71875 , 1 ，1.
+After 800 training step(s),loss on training batch is 21.1485.The batch test accuracy = 0.96875 , 1 ，1.
+After 900 training step(s),loss on training batch is 17.0244.The batch test accuracy = 0.875 , 1 ，1.
+After 1000 training step(s),loss on training batch is 6.61489.The batch test accuracy = 0.90625 , 1 ，1.
+After 1100 training step(s),loss on training batch is 8.55603.The batch test accuracy = 0.84375 , 1 ，1.
+After 1200 training step(s),loss on training batch is 11.7691.The batch test accuracy = 0.875 , 1 ，1.
+After 1300 training step(s),loss on training batch is 8.12191.The batch test accuracy = 0.9375 , 1 ，1.
+After 1400 training step(s),loss on training batch is 6.94182.The batch test accuracy = 0.90625 , 1 ，1.
+After 1500 training step(s),loss on training batch is 6.31631.The batch test accuracy = 0.84375 , 1 ，1.
+After 1600 training step(s),loss on training batch is 3.13104.The batch test accuracy = 0.875 , 1 ，1.
+After 1700 training step(s),loss on training batch is 1.62401.The batch test accuracy = 0.90625 , 1 ，1.
+After 1800 training step(s),loss on training batch is 8.57077.The batch test accuracy = 0.875 , 1 ，1.
+After 1900 training step(s),loss on training batch is 7.33854.The batch test accuracy = 0.96875 , 1 ，1.
+After 2000 training step(s),loss on training batch is 3.98151.The batch test accuracy = 0.96875 , 1 ，1.
+After 2100 training step(s),loss on training batch is 8.38665.The batch test accuracy = 1 , 1 ，1.
+After 2200 training step(s),loss on training batch is 6.26746.The batch test accuracy = 0.96875 , 1 ，1.
+After 2300 training step(s),loss on training batch is 5.48801.The batch test accuracy = 0.90625 , 1 ，1.
+After 2400 training step(s),loss on training batch is 4.2747.The batch test accuracy = 0.9375 , 1 ，1.
+After 2500 training step(s),loss on training batch is 4.20965.The batch test accuracy = 0.9375 , 1 ，1.
+After 2600 training step(s),loss on training batch is 5.63145.The batch test accuracy = 0.96875 , 1 ，1.
+After 2700 training step(s),loss on training batch is 9.8765.The batch test accuracy = 1 , 1 ，1.
+After 2800 training step(s),loss on training batch is 0.85707.The batch test accuracy = 1 , 1 ，1.
+After 2900 training step(s),loss on training batch is 0.819887.The batch test accuracy = 0.96875 , 1 ，1.
+After 3000 training step(s),loss on training batch is 4.30618.The batch test accuracy = 0.9375 , 1 ，1.
+After 3100 training step(s),loss on training batch is 3.39059.The batch test accuracy = 0.9375 , 1 ，1.
+After 3200 training step(s),loss on training batch is 4.82745.The batch test accuracy = 0.96875 , 1 ，1.
+After 3300 training step(s),loss on training batch is 2.84714.The batch test accuracy = 0.9375 , 1 ，1.
+After 3400 training step(s),loss on training batch is 1.56756.The batch test accuracy = 0.96875 , 1 ，1.
+After 3500 training step(s),loss on training batch is 1.34789.The batch test accuracy = 0.96875 , 1 ，1.
+After 3600 training step(s),loss on training batch is 1.21625.The batch test accuracy = 1 , 1 ，1.
+After 3700 training step(s),loss on training batch is 1.10365.The batch test accuracy = 1 , 1 ，1.
+After 3800 training step(s),loss on training batch is 1.25261.The batch test accuracy = 1 , 1 ，1.
+After 3900 training step(s),loss on training batch is 0.745746.The batch test accuracy = 0.96875 , 1 ，1.
+After 4000 training step(s),loss on training batch is 2.43484.The batch test accuracy = 0.96875 , 1 ，1.
+After 4100 training step(s),loss on training batch is 3.31839.The batch test accuracy = 1 , 1 ，1.
+After 4200 training step(s),loss on training batch is 0.208071.The batch test accuracy = 1 , 1 ，1.
+After 4300 training step(s),loss on training batch is 0.258622.The batch test accuracy = 0.96875 , 1 ，1.
+After 4400 training step(s),loss on training batch is 4.00373.The batch test accuracy = 0.96875 , 1 ，1.
+After 4500 training step(s),loss on training batch is 0.993682.The batch test accuracy = 1 , 1 ，1.
+After 4600 training step(s),loss on training batch is 3.27184.The batch test accuracy = 1 , 1 ，1.
+After 4700 training step(s),loss on training batch is 0.492001.The batch test accuracy = 0.96875 , 1 ，1.
+After 4800 training step(s),loss on training batch is 0.973879.The batch test accuracy = 0.96875 , 1 ，1.
+After 4900 training step(s),loss on training batch is 0.20139.The batch test accuracy = 1 , 1 ，1.
+After 5000 training step(s),loss on training batch is 0.33943.The batch test accuracy = 0.96875 , 1 ，1.
+After 5100 training step(s),loss on training batch is 0.0922162.The batch test accuracy = 1 , 1 ，1.
+Interrupted on request...
+Train finished...
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/data.py:58: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/models/basiccnn.py:53: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/models/basiccnn.py:37: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/models/basiccnn.py:141: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:91: The name tf.log is deprecated. Please use tf.math.log instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:93: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:95: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:98: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:102: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:104: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:105: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+From /home/fleaven/anaconda3/envs/tfp37/lib/python3.7/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+Restoring parameters from ./checkpoint_basic/trainnum_30000_-0
+Resume training ... Start from step 0 / 30000 .
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:117: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+`tf.train.start_queue_runners()` was called when no queue runners were defined. You can safely remove the call to this deprecated function.
+After 0 training step(s),loss on training batch is 0.334294.The batch test accuracy = 0.96875 , 1 ，1.
+After 100 training step(s),loss on training batch is 1.36285.The batch test accuracy = 0.9375 , 1 ，1.
+After 200 training step(s),loss on training batch is 0.207192.The batch test accuracy = 1 , 1 ，1.
+After 300 training step(s),loss on training batch is 0.3443.The batch test accuracy = 1 , 1 ，1.
+After 400 training step(s),loss on training batch is 0.207413.The batch test accuracy = 1 , 1 ，1.
+After 500 training step(s),loss on training batch is 0.620574.The batch test accuracy = 0.9375 , 1 ，1.
+After 600 training step(s),loss on training batch is 0.0453052.The batch test accuracy = 1 , 1 ，1.
+After 700 training step(s),loss on training batch is 0.0540839.The batch test accuracy = 1 , 1 ，1.
+After 800 training step(s),loss on training batch is 0.262851.The batch test accuracy = 1 , 1 ，1.
+After 900 training step(s),loss on training batch is 0.256803.The batch test accuracy = 1 , 1 ，1.
+After 1000 training step(s),loss on training batch is 0.559743.The batch test accuracy = 1 , 1 ，1.
+After 1100 training step(s),loss on training batch is 0.0772236.The batch test accuracy = 1 , 1 ，1.
+After 1200 training step(s),loss on training batch is 0.211207.The batch test accuracy = 1 , 1 ，1.
+After 1300 training step(s),loss on training batch is 0.0403204.The batch test accuracy = 1 , 1 ，1.
+After 1400 training step(s),loss on training batch is 0.700395.The batch test accuracy = 1 , 1 ，1.
+After 1500 training step(s),loss on training batch is 0.0986796.The batch test accuracy = 1 , 1 ，1.
+After 1600 training step(s),loss on training batch is 0.0394303.The batch test accuracy = 1 , 1 ，1.
+After 1700 training step(s),loss on training batch is 0.0299389.The batch test accuracy = 1 , 1 ，1.
+After 1800 training step(s),loss on training batch is 1.83861.The batch test accuracy = 1 , 1 ，1.
+After 1900 training step(s),loss on training batch is 0.115114.The batch test accuracy = 1 , 1 ，1.
+After 2000 training step(s),loss on training batch is 0.011984.The batch test accuracy = 1 , 1 ，1.
+After 2100 training step(s),loss on training batch is 0.435529.The batch test accuracy = 1 , 1 ，1.
+After 2200 training step(s),loss on training batch is 0.182663.The batch test accuracy = 1 , 1 ，1.
+After 2300 training step(s),loss on training batch is 0.140832.The batch test accuracy = 1 , 1 ，1.
+After 2400 training step(s),loss on training batch is 0.0555127.The batch test accuracy = 1 , 1 ，1.
+After 2500 training step(s),loss on training batch is 0.0255828.The batch test accuracy = 1 , 1 ，1.
+After 2600 training step(s),loss on training batch is 0.097908.The batch test accuracy = 1 , 1 ，1.
+After 2700 training step(s),loss on training batch is 0.0500377.The batch test accuracy = 1 , 1 ，1.
+After 2800 training step(s),loss on training batch is 0.030548.The batch test accuracy = 1 , 1 ，1.
+After 2900 training step(s),loss on training batch is 0.380197.The batch test accuracy = 1 , 1 ，1.
+After 3000 training step(s),loss on training batch is 0.00223842.The batch test accuracy = 1 , 1 ，1.
+After 3100 training step(s),loss on training batch is 0.986871.The batch test accuracy = 1 , 1 ，1.
+Interrupted on request...
+Train finished...
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/data.py:58: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/models/basiccnn.py:53: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/models/basiccnn.py:37: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/models/basiccnn.py:141: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:91: The name tf.log is deprecated. Please use tf.math.log instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:93: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:95: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:98: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:102: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:104: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:105: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+From /home/fleaven/anaconda3/envs/tfp37/lib/python3.7/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+Restoring parameters from ./checkpoint_basic/trainnum_30000_-0
+Resume training ... Start from step 0 / 30000 .
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:117: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+`tf.train.start_queue_runners()` was called when no queue runners were defined. You can safely remove the call to this deprecated function.
+After 0 training step(s),loss on training batch is 0.276859.The batch test accuracy = 1 , 1 ，1.
+After 100 training step(s),loss on training batch is 0.363696.The batch test accuracy = 1 , 1 ，1.
+After 200 training step(s),loss on training batch is 0.0897825.The batch test accuracy = 1 , 1 ，1.
+After 300 training step(s),loss on training batch is 0.172893.The batch test accuracy = 1 , 1 ，1.
+Interrupted on request...
+Train finished...
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/data.py:58: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/models/basiccnn.py:53: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/models/basiccnn.py:37: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/models/basiccnn.py:141: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+Large dropout rate: 0.7 (>0.5). In TensorFlow 2.x, dropout() uses dropout rate instead of keep_prob. Please ensure that this is intended.
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:91: The name tf.log is deprecated. Please use tf.math.log instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:93: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:95: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:98: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:102: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:104: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:105: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+From /home/fleaven/anaconda3/envs/tfp37/lib/python3.7/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+Restoring parameters from ./checkpoint_basic/trainnum_30000_-0
+Resume training ... Start from step 0 / 30000 .
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/train.py:117: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+`tf.train.start_queue_runners()` was called when no queue runners were defined. You can safely remove the call to this deprecated function.
+After 0 training step(s),loss on training batch is 0.182239.The batch test accuracy = 0.96875 , 1 ，1.
+After 100 training step(s),loss on training batch is 0.0203499.The batch test accuracy = 1 , 1 ，1.
+After 200 training step(s),loss on training batch is 0.273808.The batch test accuracy = 1 , 1 ，1.
+After 300 training step(s),loss on training batch is 0.130254.The batch test accuracy = 1 , 1 ，1.
+After 400 training step(s),loss on training batch is 0.368223.The batch test accuracy = 1 , 1 ，1.
+After 500 training step(s),loss on training batch is 1.4915.The batch test accuracy = 1 , 1 ，1.
+After 600 training step(s),loss on training batch is 0.119726.The batch test accuracy = 0.96875 , 1 ，1.
+After 700 training step(s),loss on training batch is 0.0344816.The batch test accuracy = 1 , 1 ，1.
+After 800 training step(s),loss on training batch is 0.0171831.The batch test accuracy = 1 , 1 ，1.
+After 900 training step(s),loss on training batch is 0.0471066.The batch test accuracy = 1 , 1 ，1.
+After 1000 training step(s),loss on training batch is 0.493126.The batch test accuracy = 1 , 1 ，1.
+After 1100 training step(s),loss on training batch is 0.0508064.The batch test accuracy = 1 , 1 ，1.
+After 1200 training step(s),loss on training batch is 0.911643.The batch test accuracy = 1 , 1 ，1.
+After 1300 training step(s),loss on training batch is 0.133658.The batch test accuracy = 1 , 1 ，1.
+After 1400 training step(s),loss on training batch is 1.21267.The batch test accuracy = 1 , 1 ，1.
+After 1500 training step(s),loss on training batch is 1.34594.The batch test accuracy = 1 , 1 ，1.
+After 1600 training step(s),loss on training batch is 2.42456.The batch test accuracy = 1 , 1 ，1.
+After 1700 training step(s),loss on training batch is 4.37083.The batch test accuracy = 1 , 1 ，1.
+After 1800 training step(s),loss on training batch is 3.93968.The batch test accuracy = 1 , 1 ，1.
+After 1900 training step(s),loss on training batch is 0.127871.The batch test accuracy = 0.96875 , 1 ，1.
+After 2000 training step(s),loss on training batch is 2.44777.The batch test accuracy = 0.96875 , 1 ，1.
+After 2100 training step(s),loss on training batch is 0.56613.The batch test accuracy = 1 , 1 ，1.
+After 2200 training step(s),loss on training batch is 0.0413843.The batch test accuracy = 1 , 1 ，1.
+Interrupted on request...
+Train finished...

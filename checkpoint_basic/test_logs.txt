@@ -1,0 +1,70 @@
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/data.py:58: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/models/basiccnn.py:53: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/models/basiccnn.py:37: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/test.py:55: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/test.py:57: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+From /home/fleaven/anaconda3/envs/tfp37/lib/python3.7/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+Restoring parameters from ./checkpoint_x1/trainnum_30000_-0
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/data.py:58: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/models/basiccnn.py:53: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/models/basiccnn.py:37: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/test.py:53: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/test.py:55: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+From /home/fleaven/anaconda3/envs/tfp37/lib/python3.7/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+Restoring parameters from ./checkpoint_basic/trainnum_30000_-0
+The final test accuracy (in 2048 pics) = top1: 0.870931 , top5: 0.986816 ，top10: 0.997559.
+Test finished...
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/data.py:58: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/models/basiccnn.py:53: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/models/basiccnn.py:37: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/test.py:53: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/test.py:55: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+From /home/fleaven/anaconda3/envs/tfp37/lib/python3.7/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+Restoring parameters from ./checkpoint_basic/trainnum_30000_-0
+The final test accuracy (in 2048 pics) = top1: 0.894043 , top5: 0.98877 ，top10: 0.998047.
+Test finished...
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/data.py:58: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/models/basiccnn.py:53: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/models/basiccnn.py:37: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/test.py:53: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+From /home/fleaven/Documents/AI/OCR/HCCR-HWDB-tensorflow-master/test.py:55: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+From /home/fleaven/anaconda3/envs/tfp37/lib/python3.7/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+Restoring parameters from ./checkpoint_basic/trainnum_30000_-0
+The final test accuracy (in 2048 pics) = top1: 0.898926 , top5: 0.990723 ，top10: 0.997559.
+Test finished...
