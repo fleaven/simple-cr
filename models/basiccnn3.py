@@ -100,16 +100,16 @@ def basiccnn3(input_tensor,train,regularizer,channels):
 	with tf.name_scope("layer-ss0"): #48*4
 		kV = tf.constant(100.)
 		bV = tf.constant(0.4)
-		x_bin, x_total = SumDiff(tf.sigmoid((h_pool4 - bV) * kV), 1)  # 对比度最大化后处理
+		x_bin, x_total = SumDiff(tf.sigmoid((h_pool3 - bV) * kV), 1)  # 对比度最大化后处理
 
 	pool_shape = h_pool4.get_shape().as_list()
 	nodes = pool_shape[1] * pool_shape[2] * pool_shape[3]
 	x_shape = x_bin.get_shape().as_list()
 	x_nodes = x_shape[1] * x_shape[2] * x_shape[3]
-	reshaped = tf.concat([tf.reshape(h_pool4, [-1, nodes]), tf.reshape(x_total[:,0,0,:], [-1,conv4_deep])], 1)
+	reshaped = tf.concat([tf.reshape(h_pool4, [-1, nodes]), tf.reshape(x_total[:,0,0,:], [-1,conv3_deep])], 1)
 
 	with tf.name_scope("layer7-fc1"):
-		w_fc1 = weight_variable([nodes +conv4_deep, fc1_num])
+		w_fc1 = weight_variable([nodes +conv3_deep, fc1_num])
 		b_fc1 = bias_variable([fc1_num])
 		if regularizer != None:
 			tf.add_to_collection('losses', regularizer(w_fc1))
@@ -126,4 +126,4 @@ def basiccnn3(input_tensor,train,regularizer,channels):
 		if regularizer != None:
 			tf.add_to_collection('losses', regularizer(w_fc2))
 
-	return tf.matmul(h_fc1_drop, w_fc2) + b_fc2, h_pool4
+	return tf.matmul(h_fc1_drop, w_fc2) + b_fc2, h_pool3

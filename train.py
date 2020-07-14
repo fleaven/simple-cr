@@ -50,7 +50,7 @@ batch_size = 128
 channels=1
 
 
-resume=True #是否继续训练模型？
+resume=False #是否继续训练模型？
 
 
 '''
