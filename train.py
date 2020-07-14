@@ -4,6 +4,7 @@ from models import hccr_cnnnet
 from models import basiccnn
 from models import basiccnn1
 from models import basiccnn2
+from models import basiccnn3
 
 class trainner:
     def __init__(self, savep, trainp,proc):
@@ -13,10 +14,11 @@ class trainner:
 
 x1 = trainner('./checkpoint_x1', '../ocr-dataset/hwdb/minitrain', basiccnn1)
 x2 = trainner('./checkpoint_x2', '../ocr-dataset/hwdb/minitrain', basiccnn2)
+x3 = trainner('./checkpoint_x3', '../ocr-dataset/hwdb/minitrain', basiccnn3)
 basic = trainner('./checkpoint_basic', '../ocr-dataset/hwdb/minitrain', basiccnn)
 hccr = trainner('./checkpoint', '../ocr-dataset/hwdb/minitrain', hccr_cnnnet)
 
-tr = x2
+tr = x3
 
 import tensorflow as tf
 from signal import SIGINT, SIGTERM
@@ -44,7 +46,7 @@ train_nums=30000
 buffer_size=1000
 regular_rate=0.0005
 
-batch_size = 32
+batch_size = 128
 channels=1
 
 

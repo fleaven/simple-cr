@@ -9,6 +9,7 @@ from models import hccr_cnnnet
 from models import basiccnn
 from models import basiccnn1
 from models import basiccnn2
+from models import basiccnn3
 
 class tester:
     def __init__(self, savep, trainp,proc):
@@ -18,10 +19,11 @@ class tester:
 
 x1 = tester('./checkpoint_x1', '../ocr-dataset/hwdb/minitest', basiccnn1)
 x2 = tester('./checkpoint_x2', '../ocr-dataset/hwdb/minitest', basiccnn2)
+x3 = tester('./checkpoint_x3', '../ocr-dataset/hwdb/minitest', basiccnn3)
 basic = tester('./checkpoint_basic', '../ocr-dataset/hwdb/minitest', basiccnn)
 hccr = tester('./checkpoint', '../ocr-dataset/hwdb/minitest', hccr_cnnnet)
 
-tr = x2
+tr = x3
 
 logger = logging.getLogger()
 logger.setLevel(level = logging.INFO)
@@ -31,7 +33,7 @@ logger.addHandler(logging.StreamHandler())
 
 gpunum='0'
 
-batch_size = 32
+batch_size = 128
 img_size=[96,96]
 channels=1
 

@@ -55,7 +55,7 @@ def max_pool_2x2(x):
 def max_pool_2x1(x):
 	return tf.nn.max_pool(x, ksize=[1, 2, 1, 1], strides=[1, 2, 1, 1], padding='VALID')
 
-def basiccnn2(input_tensor,train,regularizer,channels):
+def basiccnn3(input_tensor,train,regularizer,channels):
 	conv1_deep = 96
 	conv2_deep = 128
 	conv3_deep = 160
@@ -106,10 +106,10 @@ def basiccnn2(input_tensor,train,regularizer,channels):
 	nodes = pool_shape[1] * pool_shape[2] * pool_shape[3]
 	x_shape = x_bin.get_shape().as_list()
 	x_nodes = x_shape[1] * x_shape[2] * x_shape[3]
-	reshaped = tf.concat([tf.reshape(h_pool4, [-1, nodes]), tf.reshape(x_bin, [-1, x_nodes]), tf.reshape(x_total, [-1, 4*conv4_deep])], 1)
+	reshaped = tf.concat([tf.reshape(h_pool4, [-1, nodes]), tf.reshape(x_total[:,0,0,:], [-1,conv4_deep])], 1)
 
 	with tf.name_scope("layer7-fc1"):
-		w_fc1 = weight_variable([nodes + x_nodes+4*conv4_deep, fc1_num])
+		w_fc1 = weight_variable([nodes +conv4_deep, fc1_num])
 		b_fc1 = bias_variable([fc1_num])
 		if regularizer != None:
 			tf.add_to_collection('losses', regularizer(w_fc1))

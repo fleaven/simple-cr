@@ -601,3 +601,1160 @@ After 400 training step(s),loss on training batch is 1.6296.The batch test accur
 After 500 training step(s),loss on training batch is 0.163469.The batch test accuracy = 0.96875 , 1 ，1.
 Interrupted on request...
 Train finished...
+From /home/archlab/AI/simple-cr/data.py:58: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+From /home/archlab/AI/simple-cr/models/basiccnn2.py:53: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+From /home/archlab/AI/simple-cr/models/basiccnn2.py:37: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/archlab/AI/simple-cr/models/basiccnn2.py:119: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+Large dropout rate: 0.7 (>0.5). In TensorFlow 2.x, dropout() uses dropout rate instead of keep_prob. Please ensure that this is intended.
+From /home/archlab/AI/simple-cr/train.py:91: The name tf.log is deprecated. Please use tf.math.log instead.
+
+From /home/archlab/AI/simple-cr/train.py:93: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+From /home/archlab/AI/simple-cr/train.py:95: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+From /home/archlab/AI/simple-cr/train.py:98: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+From /home/archlab/AI/simple-cr/train.py:102: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+From /home/archlab/AI/simple-cr/train.py:104: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+From /home/archlab/AI/simple-cr/train.py:105: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+From /home/archlab/AI/simple-cr/data.py:58: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+From /home/archlab/AI/simple-cr/models/basiccnn2.py:53: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+From /home/archlab/AI/simple-cr/models/basiccnn2.py:37: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/archlab/AI/simple-cr/models/basiccnn2.py:119: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+Large dropout rate: 0.7 (>0.5). In TensorFlow 2.x, dropout() uses dropout rate instead of keep_prob. Please ensure that this is intended.
+From /home/archlab/AI/simple-cr/train.py:91: The name tf.log is deprecated. Please use tf.math.log instead.
+
+From /home/archlab/AI/simple-cr/train.py:93: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+From /home/archlab/AI/simple-cr/train.py:95: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+From /home/archlab/AI/simple-cr/train.py:98: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+From /home/archlab/AI/simple-cr/train.py:102: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+From /home/archlab/AI/simple-cr/train.py:104: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+From /home/archlab/AI/simple-cr/train.py:105: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+From /home/archlab/AI/simple-cr/train.py:117: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+`tf.train.start_queue_runners()` was called when no queue runners were defined. You can safely remove the call to this deprecated function.
+After 0 training step(s),loss on training batch is 111.684.The batch test accuracy = 0.03125 , 0.09375 ，0.3125.
+After 100 training step(s),loss on training batch is 113.07.The batch test accuracy = 0.0625 , 0.1875 ，0.34375.
+After 200 training step(s),loss on training batch is 111.579.The batch test accuracy = 0.03125 , 0.15625 ，0.3125.
+After 300 training step(s),loss on training batch is 110.226.The batch test accuracy = 0.09375 , 0.28125 ，0.46875.
+After 400 training step(s),loss on training batch is 112.416.The batch test accuracy = 0.03125 , 0.15625 ，0.46875.
+After 500 training step(s),loss on training batch is 112.036.The batch test accuracy = 0.09375 , 0.25 ，0.28125.
+After 600 training step(s),loss on training batch is 108.075.The batch test accuracy = 0 , 0.3125 ，0.53125.
+After 700 training step(s),loss on training batch is 107.19.The batch test accuracy = 0.125 , 0.40625 ，0.53125.
+After 800 training step(s),loss on training batch is 108.395.The batch test accuracy = 0.09375 , 0.1875 ，0.53125.
+After 900 training step(s),loss on training batch is 108.794.The batch test accuracy = 0.03125 , 0.3125 ，0.40625.
+After 1000 training step(s),loss on training batch is 111.623.The batch test accuracy = 0.03125 , 0.3125 ，0.6875.
+After 1100 training step(s),loss on training batch is 102.144.The batch test accuracy = 0.0625 , 0.53125 ，0.71875.
+After 1200 training step(s),loss on training batch is 100.512.The batch test accuracy = 0.09375 , 0.46875 ，0.75.
+After 1300 training step(s),loss on training batch is 95.0863.The batch test accuracy = 0.15625 , 0.6875 ，0.8125.
+After 1400 training step(s),loss on training batch is 83.9127.The batch test accuracy = 0.09375 , 0.625 ，0.84375.
+After 1500 training step(s),loss on training batch is 72.3357.The batch test accuracy = 0.28125 , 0.8125 ，0.96875.
+After 1600 training step(s),loss on training batch is 52.3863.The batch test accuracy = 0.25 , 0.875 ，0.9375.
+After 1700 training step(s),loss on training batch is 59.5141.The batch test accuracy = 0.5 , 0.875 ，0.9375.
+After 1800 training step(s),loss on training batch is 49.7332.The batch test accuracy = 0.5625 , 0.90625 ，0.9375.
+After 1900 training step(s),loss on training batch is 48.1491.The batch test accuracy = 0.6875 , 1 ，1.
+After 2000 training step(s),loss on training batch is 40.304.The batch test accuracy = 0.4375 , 0.9375 ，0.9375.
+After 2100 training step(s),loss on training batch is 40.3038.The batch test accuracy = 0.59375 , 0.96875 ，1.
+After 2200 training step(s),loss on training batch is 35.303.The batch test accuracy = 0.625 , 0.96875 ，0.96875.
+After 2300 training step(s),loss on training batch is 47.5851.The batch test accuracy = 0.65625 , 0.90625 ，0.96875.
+After 2400 training step(s),loss on training batch is 46.5449.The batch test accuracy = 0.625 , 0.9375 ，0.96875.
+After 2500 training step(s),loss on training batch is 30.8876.The batch test accuracy = 0.53125 , 0.84375 ，0.96875.
+After 2600 training step(s),loss on training batch is 32.9817.The batch test accuracy = 0.6875 , 1 ，1.
+After 2700 training step(s),loss on training batch is 29.2521.The batch test accuracy = 0.6875 , 0.875 ，1.
+Interrupted on request...
+Train finished...
+From /home/archlab/AI/simple-cr/data.py:58: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+From /home/archlab/AI/simple-cr/models/basiccnn2.py:53: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+From /home/archlab/AI/simple-cr/models/basiccnn2.py:37: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/archlab/AI/simple-cr/models/basiccnn2.py:119: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+Large dropout rate: 0.7 (>0.5). In TensorFlow 2.x, dropout() uses dropout rate instead of keep_prob. Please ensure that this is intended.
+From /home/archlab/AI/simple-cr/train.py:91: The name tf.log is deprecated. Please use tf.math.log instead.
+
+From /home/archlab/AI/simple-cr/train.py:93: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+From /home/archlab/AI/simple-cr/train.py:95: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+From /home/archlab/AI/simple-cr/train.py:98: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+From /home/archlab/AI/simple-cr/train.py:102: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+From /home/archlab/AI/simple-cr/train.py:104: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+From /home/archlab/AI/simple-cr/train.py:105: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+From /home/archlab/AI/simple-cr/train.py:117: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+`tf.train.start_queue_runners()` was called when no queue runners were defined. You can safely remove the call to this deprecated function.
+After 0 training step(s),loss on training batch is 461.259.The batch test accuracy = 0.046875 , 0.171875 ，0.328125.
+After 100 training step(s),loss on training batch is 449.339.The batch test accuracy = 0.03125 , 0.203125 ，0.414062.
+After 200 training step(s),loss on training batch is 432.125.The batch test accuracy = 0.0703125 , 0.28125 ，0.492188.
+After 300 training step(s),loss on training batch is 365.527.The batch test accuracy = 0.15625 , 0.507812 ，0.8125.
+After 400 training step(s),loss on training batch is 266.022.The batch test accuracy = 0.398438 , 0.820312 ，0.945312.
+After 500 training step(s),loss on training batch is 171.852.The batch test accuracy = 0.601562 , 0.914062 ，0.984375.
+After 600 training step(s),loss on training batch is 134.542.The batch test accuracy = 0.695312 , 0.96875 ，0.992188.
+After 700 training step(s),loss on training batch is 99.3418.The batch test accuracy = 0.75 , 0.976562 ，0.992188.
+After 800 training step(s),loss on training batch is 100.955.The batch test accuracy = 0.726562 , 0.960938 ，0.984375.
+After 900 training step(s),loss on training batch is 72.7681.The batch test accuracy = 0.8125 , 1 ，1.
+After 1000 training step(s),loss on training batch is 70.781.The batch test accuracy = 0.882812 , 0.984375 ，1.
+After 1100 training step(s),loss on training batch is 63.7992.The batch test accuracy = 0.882812 , 1 ，1.
+After 1200 training step(s),loss on training batch is 60.1227.The batch test accuracy = 0.875 , 1 ，1.
+After 1300 training step(s),loss on training batch is 52.9415.The batch test accuracy = 0.890625 , 1 ，1.
+After 1400 training step(s),loss on training batch is 41.0242.The batch test accuracy = 0.835938 , 0.992188 ，1.
+After 1500 training step(s),loss on training batch is 36.4289.The batch test accuracy = 0.898438 , 1 ，1.
+After 1600 training step(s),loss on training batch is 36.3739.The batch test accuracy = 0.882812 , 1 ，1.
+After 1700 training step(s),loss on training batch is 30.5077.The batch test accuracy = 0.890625 , 1 ，1.
+After 1800 training step(s),loss on training batch is 39.9916.The batch test accuracy = 0.929688 , 0.992188 ，1.
+After 1900 training step(s),loss on training batch is 11.765.The batch test accuracy = 0.9375 , 1 ，1.
+After 2000 training step(s),loss on training batch is 32.6653.The batch test accuracy = 0.929688 , 1 ，1.
+After 2100 training step(s),loss on training batch is 22.0511.The batch test accuracy = 0.929688 , 1 ，1.
+After 2200 training step(s),loss on training batch is 27.8267.The batch test accuracy = 0.898438 , 1 ，1.
+After 2300 training step(s),loss on training batch is 13.1646.The batch test accuracy = 0.96875 , 1 ，1.
+After 2400 training step(s),loss on training batch is 24.9118.The batch test accuracy = 0.953125 , 1 ，1.
+After 2500 training step(s),loss on training batch is 13.9277.The batch test accuracy = 0.984375 , 1 ，1.
+After 2600 training step(s),loss on training batch is 13.0028.The batch test accuracy = 0.945312 , 1 ，1.
+After 2700 training step(s),loss on training batch is 10.6008.The batch test accuracy = 0.96875 , 1 ，1.
+After 2800 training step(s),loss on training batch is 13.6221.The batch test accuracy = 0.96875 , 1 ，1.
+After 2900 training step(s),loss on training batch is 17.8747.The batch test accuracy = 0.945312 , 1 ，1.
+After 3000 training step(s),loss on training batch is 10.7939.The batch test accuracy = 0.96875 , 1 ，1.
+After 3100 training step(s),loss on training batch is 21.645.The batch test accuracy = 0.984375 , 1 ，1.
+After 3200 training step(s),loss on training batch is 16.2898.The batch test accuracy = 0.96875 , 1 ，1.
+After 3300 training step(s),loss on training batch is 9.15079.The batch test accuracy = 0.960938 , 1 ，1.
+After 3400 training step(s),loss on training batch is 4.96334.The batch test accuracy = 0.96875 , 1 ，1.
+After 3500 training step(s),loss on training batch is 12.3933.The batch test accuracy = 0.953125 , 1 ，1.
+After 3600 training step(s),loss on training batch is 4.90163.The batch test accuracy = 0.984375 , 1 ，1.
+After 3700 training step(s),loss on training batch is 10.3233.The batch test accuracy = 0.976562 , 1 ，1.
+After 3800 training step(s),loss on training batch is 11.5475.The batch test accuracy = 0.972222 , 1 ，1.
+After 3900 training step(s),loss on training batch is 8.11536.The batch test accuracy = 0.984375 , 1 ，1.
+After 4000 training step(s),loss on training batch is 7.23907.The batch test accuracy = 0.984375 , 1 ，1.
+After 4100 training step(s),loss on training batch is 6.9278.The batch test accuracy = 0.976562 , 1 ，1.
+After 4200 training step(s),loss on training batch is 4.51607.The batch test accuracy = 0.976562 , 1 ，1.
+After 4300 training step(s),loss on training batch is 3.29014.The batch test accuracy = 0.992188 , 1 ，1.
+After 4400 training step(s),loss on training batch is 7.33469.The batch test accuracy = 0.984375 , 1 ，1.
+After 4500 training step(s),loss on training batch is 2.5172.The batch test accuracy = 0.992188 , 1 ，1.
+After 4600 training step(s),loss on training batch is 2.90568.The batch test accuracy = 0.96875 , 1 ，1.
+After 4700 training step(s),loss on training batch is 2.73514.The batch test accuracy = 0.976562 , 1 ，1.
+After 4800 training step(s),loss on training batch is 6.7978.The batch test accuracy = 0.984375 , 1 ，1.
+After 4900 training step(s),loss on training batch is 1.2766.The batch test accuracy = 0.984375 , 1 ，1.
+After 5000 training step(s),loss on training batch is 1.72029.The batch test accuracy = 0.976562 , 1 ，1.
+After 5100 training step(s),loss on training batch is 8.31656.The batch test accuracy = 0.976562 , 1 ，1.
+After 5200 training step(s),loss on training batch is 4.49387.The batch test accuracy = 0.976562 , 1 ，1.
+After 5300 training step(s),loss on training batch is 2.19359.The batch test accuracy = 0.992188 , 1 ，1.
+After 5400 training step(s),loss on training batch is 1.57617.The batch test accuracy = 0.992188 , 1 ，1.
+After 5500 training step(s),loss on training batch is 4.22194.The batch test accuracy = 0.992188 , 1 ，1.
+After 5600 training step(s),loss on training batch is 2.74021.The batch test accuracy = 0.984375 , 1 ，1.
+After 5700 training step(s),loss on training batch is 1.90268.The batch test accuracy = 0.992188 , 1 ，1.
+After 5800 training step(s),loss on training batch is 5.24596.The batch test accuracy = 0.976562 , 1 ，1.
+After 5900 training step(s),loss on training batch is 3.26292.The batch test accuracy = 0.984375 , 1 ，1.
+After 6000 training step(s),loss on training batch is 4.48904.The batch test accuracy = 0.992188 , 1 ，1.
+After 6100 training step(s),loss on training batch is 4.49126.The batch test accuracy = 0.984375 , 1 ，1.
+After 6200 training step(s),loss on training batch is 2.64889.The batch test accuracy = 0.976562 , 1 ，1.
+After 6300 training step(s),loss on training batch is 4.20023.The batch test accuracy = 1 , 1 ，1.
+After 6400 training step(s),loss on training batch is 6.00197.The batch test accuracy = 0.984375 , 1 ，1.
+After 6500 training step(s),loss on training batch is 3.64142.The batch test accuracy = 0.976562 , 1 ，1.
+After 6600 training step(s),loss on training batch is 3.85938.The batch test accuracy = 0.984375 , 1 ，1.
+After 6700 training step(s),loss on training batch is 5.66007.The batch test accuracy = 1 , 1 ，1.
+After 6800 training step(s),loss on training batch is 2.79382.The batch test accuracy = 0.992188 , 1 ，1.
+After 6900 training step(s),loss on training batch is 1.70508.The batch test accuracy = 0.992188 , 1 ，1.
+After 7000 training step(s),loss on training batch is 1.59561.The batch test accuracy = 1 , 1 ，1.
+After 7100 training step(s),loss on training batch is 3.33219.The batch test accuracy = 0.992188 , 1 ，1.
+After 7200 training step(s),loss on training batch is 0.677755.The batch test accuracy = 1 , 1 ，1.
+After 7300 training step(s),loss on training batch is 2.59188.The batch test accuracy = 0.984375 , 1 ，1.
+After 7400 training step(s),loss on training batch is 2.18534.The batch test accuracy = 1 , 1 ，1.
+After 7500 training step(s),loss on training batch is 3.81402.The batch test accuracy = 0.992188 , 1 ，1.
+After 7600 training step(s),loss on training batch is 0.555596.The batch test accuracy = 0.992188 , 1 ，1.
+After 7700 training step(s),loss on training batch is 2.03207.The batch test accuracy = 1 , 1 ，1.
+Interrupted on request...
+Train finished...
+From /home/archlab/AI/simple-cr/data.py:58: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+From /home/archlab/AI/simple-cr/models/basiccnn2.py:53: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+From /home/archlab/AI/simple-cr/models/basiccnn2.py:37: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/archlab/AI/simple-cr/models/basiccnn2.py:119: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+Large dropout rate: 0.7 (>0.5). In TensorFlow 2.x, dropout() uses dropout rate instead of keep_prob. Please ensure that this is intended.
+From /home/archlab/AI/simple-cr/train.py:91: The name tf.log is deprecated. Please use tf.math.log instead.
+
+From /home/archlab/AI/simple-cr/train.py:93: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+From /home/archlab/AI/simple-cr/train.py:95: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+From /home/archlab/AI/simple-cr/train.py:98: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+From /home/archlab/AI/simple-cr/train.py:102: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+From /home/archlab/AI/simple-cr/train.py:104: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+From /home/archlab/AI/simple-cr/train.py:105: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+From /home/archlab/miniconda3/envs/tf14/lib/python3.7/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+Restoring parameters from ./checkpoint_x2/trainnum_30000_-0
+Resume training ... Start from step 0 / 30000 .
+From /home/archlab/AI/simple-cr/train.py:117: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+`tf.train.start_queue_runners()` was called when no queue runners were defined. You can safely remove the call to this deprecated function.
+After 0 training step(s),loss on training batch is 0.921773.The batch test accuracy = 0.984375 , 1 ，1.
+After 100 training step(s),loss on training batch is 1.57777.The batch test accuracy = 1 , 1 ，1.
+After 200 training step(s),loss on training batch is 0.794318.The batch test accuracy = 0.992188 , 1 ，1.
+After 300 training step(s),loss on training batch is 0.8606.The batch test accuracy = 0.984375 , 1 ，1.
+After 400 training step(s),loss on training batch is 0.518996.The batch test accuracy = 0.992188 , 1 ，1.
+After 500 training step(s),loss on training batch is 0.662753.The batch test accuracy = 1 , 1 ，1.
+After 600 training step(s),loss on training batch is 6.8493.The batch test accuracy = 0.992188 , 1 ，1.
+After 700 training step(s),loss on training batch is 0.621576.The batch test accuracy = 1 , 1 ，1.
+After 800 training step(s),loss on training batch is 0.757426.The batch test accuracy = 1 , 1 ，1.
+After 900 training step(s),loss on training batch is 0.66036.The batch test accuracy = 0.992188 , 1 ，1.
+After 1000 training step(s),loss on training batch is 2.71831.The batch test accuracy = 0.992188 , 1 ，1.
+After 1100 training step(s),loss on training batch is 1.01495.The batch test accuracy = 0.992188 , 1 ，1.
+After 1200 training step(s),loss on training batch is 1.26487.The batch test accuracy = 0.984375 , 1 ，1.
+After 1300 training step(s),loss on training batch is 0.0929954.The batch test accuracy = 1 , 1 ，1.
+After 1400 training step(s),loss on training batch is 5.00303.The batch test accuracy = 0.984375 , 1 ，1.
+After 1500 training step(s),loss on training batch is 0.80709.The batch test accuracy = 1 , 1 ，1.
+After 1600 training step(s),loss on training batch is 0.523276.The batch test accuracy = 1 , 1 ，1.
+After 1700 training step(s),loss on training batch is 0.746033.The batch test accuracy = 1 , 1 ，1.
+After 1800 training step(s),loss on training batch is 1.7237.The batch test accuracy = 0.992188 , 1 ，1.
+After 1900 training step(s),loss on training batch is 0.1747.The batch test accuracy = 0.992188 , 1 ，1.
+After 2000 training step(s),loss on training batch is 1.1285.The batch test accuracy = 1 , 1 ，1.
+After 2100 training step(s),loss on training batch is 4.68188.The batch test accuracy = 1 , 1 ，1.
+After 2200 training step(s),loss on training batch is 0.998874.The batch test accuracy = 1 , 1 ，1.
+After 2300 training step(s),loss on training batch is 1.45169.The batch test accuracy = 0.992188 , 1 ，1.
+After 2400 training step(s),loss on training batch is 0.278612.The batch test accuracy = 1 , 1 ，1.
+After 2500 training step(s),loss on training batch is 0.990237.The batch test accuracy = 1 , 1 ，1.
+After 2600 training step(s),loss on training batch is 0.169385.The batch test accuracy = 1 , 1 ，1.
+After 2700 training step(s),loss on training batch is 1.38879.The batch test accuracy = 1 , 1 ，1.
+After 2800 training step(s),loss on training batch is 0.279312.The batch test accuracy = 1 , 1 ，1.
+After 2900 training step(s),loss on training batch is 1.68671.The batch test accuracy = 0.984375 , 1 ，1.
+After 3000 training step(s),loss on training batch is 0.339922.The batch test accuracy = 1 , 1 ，1.
+After 3100 training step(s),loss on training batch is 2.28576.The batch test accuracy = 1 , 1 ，1.
+After 3200 training step(s),loss on training batch is 1.90961.The batch test accuracy = 1 , 1 ，1.
+After 3300 training step(s),loss on training batch is 0.263773.The batch test accuracy = 0.992188 , 1 ，1.
+After 3400 training step(s),loss on training batch is 1.32542.The batch test accuracy = 0.992188 , 1 ，1.
+After 3500 training step(s),loss on training batch is 1.85722.The batch test accuracy = 0.992188 , 1 ，1.
+After 3600 training step(s),loss on training batch is 1.02565.The batch test accuracy = 1 , 1 ，1.
+After 3700 training step(s),loss on training batch is 1.29027.The batch test accuracy = 0.984375 , 1 ，1.
+After 3800 training step(s),loss on training batch is 7.20592.The batch test accuracy = 1 , 1 ，1.
+After 3900 training step(s),loss on training batch is 0.595135.The batch test accuracy = 1 , 1 ，1.
+After 4000 training step(s),loss on training batch is 0.458954.The batch test accuracy = 0.984375 , 1 ，1.
+After 4100 training step(s),loss on training batch is 1.36008.The batch test accuracy = 0.992188 , 1 ，1.
+After 4200 training step(s),loss on training batch is 0.173164.The batch test accuracy = 0.992188 , 1 ，1.
+After 4300 training step(s),loss on training batch is 0.095898.The batch test accuracy = 1 , 1 ，1.
+After 4400 training step(s),loss on training batch is 1.01613.The batch test accuracy = 1 , 1 ，1.
+After 4500 training step(s),loss on training batch is 2.08944.The batch test accuracy = 1 , 1 ，1.
+After 4600 training step(s),loss on training batch is 0.301721.The batch test accuracy = 1 , 1 ，1.
+After 4700 training step(s),loss on training batch is 1.7619.The batch test accuracy = 0.984375 , 1 ，1.
+After 4800 training step(s),loss on training batch is 0.234391.The batch test accuracy = 0.992188 , 1 ，1.
+After 4900 training step(s),loss on training batch is 1.73458.The batch test accuracy = 1 , 1 ，1.
+After 5000 training step(s),loss on training batch is 0.178824.The batch test accuracy = 1 , 1 ，1.
+After 5100 training step(s),loss on training batch is 0.297411.The batch test accuracy = 1 , 1 ，1.
+Interrupted on request...
+Train finished...
+From /home/archlab/AI/simple-cr/data.py:58: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+From /home/archlab/AI/simple-cr/models/basiccnn2.py:53: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+From /home/archlab/AI/simple-cr/models/basiccnn2.py:37: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/archlab/AI/simple-cr/models/basiccnn2.py:119: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+Large dropout rate: 0.7 (>0.5). In TensorFlow 2.x, dropout() uses dropout rate instead of keep_prob. Please ensure that this is intended.
+From /home/archlab/AI/simple-cr/train.py:91: The name tf.log is deprecated. Please use tf.math.log instead.
+
+From /home/archlab/AI/simple-cr/train.py:93: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+From /home/archlab/AI/simple-cr/train.py:95: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+From /home/archlab/AI/simple-cr/train.py:98: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+From /home/archlab/AI/simple-cr/train.py:102: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+From /home/archlab/AI/simple-cr/train.py:104: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+From /home/archlab/AI/simple-cr/train.py:105: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+From /home/archlab/miniconda3/envs/tf14/lib/python3.7/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+Restoring parameters from ./checkpoint_x2/trainnum_30000_-0
+Resume training ... Start from step 0 / 30000 .
+From /home/archlab/AI/simple-cr/train.py:117: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+`tf.train.start_queue_runners()` was called when no queue runners were defined. You can safely remove the call to this deprecated function.
+After 0 training step(s),loss on training batch is 1.32409.The batch test accuracy = 0.984375 , 1 ，1.
+After 100 training step(s),loss on training batch is 2.08327.The batch test accuracy = 1 , 1 ，1.
+After 200 training step(s),loss on training batch is 0.269079.The batch test accuracy = 1 , 1 ，1.
+After 300 training step(s),loss on training batch is 1.9813.The batch test accuracy = 1 , 1 ，1.
+After 400 training step(s),loss on training batch is 0.564619.The batch test accuracy = 1 , 1 ，1.
+After 500 training step(s),loss on training batch is 0.522309.The batch test accuracy = 1 , 1 ，1.
+After 600 training step(s),loss on training batch is 1.09244.The batch test accuracy = 1 , 1 ，1.
+After 700 training step(s),loss on training batch is 0.517769.The batch test accuracy = 1 , 1 ，1.
+After 800 training step(s),loss on training batch is 5.24568.The batch test accuracy = 0.992188 , 1 ，1.
+After 900 training step(s),loss on training batch is 0.263734.The batch test accuracy = 0.992188 , 1 ，1.
+After 1000 training step(s),loss on training batch is 0.198279.The batch test accuracy = 1 , 1 ，1.
+After 1100 training step(s),loss on training batch is 2.48378.The batch test accuracy = 1 , 1 ，1.
+After 1200 training step(s),loss on training batch is 0.859996.The batch test accuracy = 1 , 1 ，1.
+After 1300 training step(s),loss on training batch is 0.22456.The batch test accuracy = 1 , 1 ，1.
+After 1400 training step(s),loss on training batch is 0.159842.The batch test accuracy = 1 , 1 ，1.
+After 1500 training step(s),loss on training batch is 0.167795.The batch test accuracy = 0.992188 , 1 ，1.
+After 1600 training step(s),loss on training batch is 0.614884.The batch test accuracy = 0.992188 , 1 ，1.
+After 1700 training step(s),loss on training batch is 0.113948.The batch test accuracy = 1 , 1 ，1.
+After 1800 training step(s),loss on training batch is 0.134592.The batch test accuracy = 0.992188 , 1 ，1.
+After 1900 training step(s),loss on training batch is 1.10843.The batch test accuracy = 0.992188 , 1 ，1.
+After 2000 training step(s),loss on training batch is 2.48848.The batch test accuracy = 0.992188 , 1 ，1.
+After 2100 training step(s),loss on training batch is 4.67952.The batch test accuracy = 1 , 1 ，1.
+After 2200 training step(s),loss on training batch is 0.130263.The batch test accuracy = 1 , 1 ，1.
+After 2300 training step(s),loss on training batch is 1.46714.The batch test accuracy = 1 , 1 ，1.
+After 2400 training step(s),loss on training batch is 0.0647335.The batch test accuracy = 1 , 1 ，1.
+After 2500 training step(s),loss on training batch is 1.20337.The batch test accuracy = 1 , 1 ，1.
+After 2600 training step(s),loss on training batch is 0.919225.The batch test accuracy = 1 , 1 ，1.
+After 2700 training step(s),loss on training batch is 0.797399.The batch test accuracy = 0.992188 , 1 ，1.
+After 2800 training step(s),loss on training batch is 4.61401.The batch test accuracy = 0.992188 , 1 ，1.
+After 2900 training step(s),loss on training batch is 0.023806.The batch test accuracy = 1 , 1 ，1.
+After 3000 training step(s),loss on training batch is 4.05419.The batch test accuracy = 1 , 1 ，1.
+After 3100 training step(s),loss on training batch is 0.352571.The batch test accuracy = 1 , 1 ，1.
+After 3200 training step(s),loss on training batch is 1.67544.The batch test accuracy = 1 , 1 ，1.
+After 3300 training step(s),loss on training batch is 0.356869.The batch test accuracy = 1 , 1 ，1.
+After 3400 training step(s),loss on training batch is 0.600195.The batch test accuracy = 1 , 1 ，1.
+After 3500 training step(s),loss on training batch is 3.47783.The batch test accuracy = 1 , 1 ，1.
+After 3600 training step(s),loss on training batch is 0.135471.The batch test accuracy = 1 , 1 ，1.
+After 3700 training step(s),loss on training batch is 8.97132.The batch test accuracy = 1 , 1 ，1.
+After 3800 training step(s),loss on training batch is 0.193558.The batch test accuracy = 1 , 1 ，1.
+After 3900 training step(s),loss on training batch is 0.314648.The batch test accuracy = 0.992188 , 1 ，1.
+After 4000 training step(s),loss on training batch is 0.111194.The batch test accuracy = 1 , 1 ，1.
+After 4100 training step(s),loss on training batch is 0.303085.The batch test accuracy = 1 , 1 ，1.
+After 4200 training step(s),loss on training batch is 0.116644.The batch test accuracy = 0.992188 , 1 ，1.
+After 4300 training step(s),loss on training batch is 0.227261.The batch test accuracy = 1 , 1 ，1.
+After 4400 training step(s),loss on training batch is 0.0520091.The batch test accuracy = 0.992188 , 1 ，1.
+After 4500 training step(s),loss on training batch is 4.64541.The batch test accuracy = 1 , 1 ，1.
+After 4600 training step(s),loss on training batch is 0.0892144.The batch test accuracy = 1 , 1 ，1.
+After 4700 training step(s),loss on training batch is 3.80408.The batch test accuracy = 0.992188 , 1 ，1.
+After 4800 training step(s),loss on training batch is 0.126594.The batch test accuracy = 1 , 1 ，1.
+After 4900 training step(s),loss on training batch is 0.0319096.The batch test accuracy = 1 , 1 ，1.
+After 5000 training step(s),loss on training batch is 0.0591696.The batch test accuracy = 1 , 1 ，1.
+After 5100 training step(s),loss on training batch is 0.0325917.The batch test accuracy = 0.992188 , 1 ，1.
+After 5200 training step(s),loss on training batch is 0.0919947.The batch test accuracy = 1 , 1 ，1.
+After 5300 training step(s),loss on training batch is 0.120781.The batch test accuracy = 1 , 1 ，1.
+Interrupted on request...
+Train finished...
+From /home/archlab/AI/simple-cr/data.py:58: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+From /home/archlab/AI/simple-cr/models/basiccnn2.py:53: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+From /home/archlab/AI/simple-cr/models/basiccnn2.py:37: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/archlab/AI/simple-cr/models/basiccnn2.py:119: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+Large dropout rate: 0.7 (>0.5). In TensorFlow 2.x, dropout() uses dropout rate instead of keep_prob. Please ensure that this is intended.
+From /home/archlab/AI/simple-cr/train.py:91: The name tf.log is deprecated. Please use tf.math.log instead.
+
+From /home/archlab/AI/simple-cr/train.py:93: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+From /home/archlab/AI/simple-cr/train.py:95: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+From /home/archlab/AI/simple-cr/train.py:98: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+From /home/archlab/AI/simple-cr/train.py:102: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+From /home/archlab/AI/simple-cr/train.py:104: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+From /home/archlab/AI/simple-cr/train.py:105: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+From /home/archlab/miniconda3/envs/tf14/lib/python3.7/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+Restoring parameters from ./checkpoint_x2/trainnum_30000_-0
+Resume training ... Start from step 0 / 30000 .
+From /home/archlab/AI/simple-cr/train.py:117: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+`tf.train.start_queue_runners()` was called when no queue runners were defined. You can safely remove the call to this deprecated function.
+After 0 training step(s),loss on training batch is 0.880063.The batch test accuracy = 1 , 1 ，1.
+After 100 training step(s),loss on training batch is 0.215658.The batch test accuracy = 1 , 1 ，1.
+After 200 training step(s),loss on training batch is 0.178326.The batch test accuracy = 1 , 1 ，1.
+After 300 training step(s),loss on training batch is 0.0697321.The batch test accuracy = 1 , 1 ，1.
+After 400 training step(s),loss on training batch is 0.400279.The batch test accuracy = 1 , 1 ，1.
+After 500 training step(s),loss on training batch is 1.5867.The batch test accuracy = 0.992188 , 1 ，1.
+After 600 training step(s),loss on training batch is 0.645771.The batch test accuracy = 1 , 1 ，1.
+After 700 training step(s),loss on training batch is 0.403655.The batch test accuracy = 1 , 1 ，1.
+After 800 training step(s),loss on training batch is 0.0315303.The batch test accuracy = 1 , 1 ，1.
+After 900 training step(s),loss on training batch is 0.538152.The batch test accuracy = 0.992188 , 1 ，1.
+After 1000 training step(s),loss on training batch is 0.51644.The batch test accuracy = 1 , 1 ，1.
+After 1100 training step(s),loss on training batch is 0.509343.The batch test accuracy = 1 , 1 ，1.
+After 1200 training step(s),loss on training batch is 0.0355755.The batch test accuracy = 1 , 1 ，1.
+After 1300 training step(s),loss on training batch is 0.0774183.The batch test accuracy = 1 , 1 ，1.
+After 1400 training step(s),loss on training batch is 0.0922049.The batch test accuracy = 1 , 1 ，1.
+After 1500 training step(s),loss on training batch is 0.0783056.The batch test accuracy = 0.992188 , 1 ，1.
+After 1600 training step(s),loss on training batch is 0.185322.The batch test accuracy = 0.992188 , 1 ，1.
+After 1700 training step(s),loss on training batch is 0.359871.The batch test accuracy = 1 , 1 ，1.
+After 1800 training step(s),loss on training batch is 0.0607946.The batch test accuracy = 0.992188 , 1 ，1.
+After 1900 training step(s),loss on training batch is 0.299519.The batch test accuracy = 1 , 1 ，1.
+After 2000 training step(s),loss on training batch is 0.0615928.The batch test accuracy = 1 , 1 ，1.
+After 2100 training step(s),loss on training batch is 0.071583.The batch test accuracy = 0.992188 , 1 ，1.
+After 2200 training step(s),loss on training batch is 0.483107.The batch test accuracy = 1 , 1 ，1.
+After 2300 training step(s),loss on training batch is 0.290768.The batch test accuracy = 1 , 1 ，1.
+After 2400 training step(s),loss on training batch is 0.821028.The batch test accuracy = 1 , 1 ，1.
+After 2500 training step(s),loss on training batch is 0.181429.The batch test accuracy = 1 , 1 ，1.
+After 2600 training step(s),loss on training batch is 0.500692.The batch test accuracy = 1 , 1 ，1.
+After 2700 training step(s),loss on training batch is 0.0602162.The batch test accuracy = 1 , 1 ，1.
+After 2800 training step(s),loss on training batch is 0.476703.The batch test accuracy = 1 , 1 ，1.
+After 2900 training step(s),loss on training batch is 0.703241.The batch test accuracy = 1 , 1 ，1.
+After 3000 training step(s),loss on training batch is 0.485097.The batch test accuracy = 1 , 1 ，1.
+After 3100 training step(s),loss on training batch is 0.0773976.The batch test accuracy = 1 , 1 ，1.
+After 3200 training step(s),loss on training batch is 0.351838.The batch test accuracy = 1 , 1 ，1.
+After 3300 training step(s),loss on training batch is 0.0720478.The batch test accuracy = 1 , 1 ，1.
+After 3400 training step(s),loss on training batch is 0.805693.The batch test accuracy = 1 , 1 ，1.
+After 3500 training step(s),loss on training batch is 0.0662192.The batch test accuracy = 1 , 1 ，1.
+After 3600 training step(s),loss on training batch is 0.784229.The batch test accuracy = 1 , 1 ，1.
+After 3700 training step(s),loss on training batch is 0.0384494.The batch test accuracy = 0.992188 , 1 ，1.
+After 3800 training step(s),loss on training batch is 0.181851.The batch test accuracy = 1 , 1 ，1.
+After 3900 training step(s),loss on training batch is 0.12108.The batch test accuracy = 1 , 1 ，1.
+After 4000 training step(s),loss on training batch is 0.124248.The batch test accuracy = 1 , 1 ，1.
+After 4100 training step(s),loss on training batch is 0.0148068.The batch test accuracy = 1 , 1 ，1.
+After 4200 training step(s),loss on training batch is 0.55387.The batch test accuracy = 1 , 1 ，1.
+After 4300 training step(s),loss on training batch is 0.0320844.The batch test accuracy = 1 , 1 ，1.
+After 4400 training step(s),loss on training batch is 2.01862.The batch test accuracy = 1 , 1 ，1.
+After 4500 training step(s),loss on training batch is 0.0272465.The batch test accuracy = 1 , 1 ，1.
+After 4600 training step(s),loss on training batch is 0.040655.The batch test accuracy = 1 , 1 ，1.
+After 4700 training step(s),loss on training batch is 0.0771805.The batch test accuracy = 1 , 1 ，1.
+After 4800 training step(s),loss on training batch is 0.21126.The batch test accuracy = 1 , 1 ，1.
+After 4900 training step(s),loss on training batch is 0.15913.The batch test accuracy = 1 , 1 ，1.
+After 5000 training step(s),loss on training batch is 0.0347885.The batch test accuracy = 1 , 1 ，1.
+After 5100 training step(s),loss on training batch is 0.0774705.The batch test accuracy = 1 , 1 ，1.
+After 5200 training step(s),loss on training batch is 0.249456.The batch test accuracy = 1 , 1 ，1.
+After 5300 training step(s),loss on training batch is 0.995057.The batch test accuracy = 1 , 1 ，1.
+After 5400 training step(s),loss on training batch is 0.10634.The batch test accuracy = 1 , 1 ，1.
+After 5500 training step(s),loss on training batch is 1.05944.The batch test accuracy = 1 , 1 ，1.
+After 5600 training step(s),loss on training batch is 6.292.The batch test accuracy = 1 , 1 ，1.
+After 5700 training step(s),loss on training batch is 0.130064.The batch test accuracy = 1 , 1 ，1.
+After 5800 training step(s),loss on training batch is 0.384725.The batch test accuracy = 1 , 1 ，1.
+After 5900 training step(s),loss on training batch is 0.165275.The batch test accuracy = 1 , 1 ，1.
+After 6000 training step(s),loss on training batch is 0.0667025.The batch test accuracy = 0.992188 , 1 ，1.
+After 6100 training step(s),loss on training batch is 0.051288.The batch test accuracy = 1 , 1 ，1.
+After 6200 training step(s),loss on training batch is 0.54276.The batch test accuracy = 1 , 1 ，1.
+After 6300 training step(s),loss on training batch is 0.0568144.The batch test accuracy = 1 , 1 ，1.
+After 6400 training step(s),loss on training batch is 0.247171.The batch test accuracy = 1 , 1 ，1.
+After 6500 training step(s),loss on training batch is 0.655318.The batch test accuracy = 1 , 1 ，1.
+After 6600 training step(s),loss on training batch is 0.873726.The batch test accuracy = 1 , 1 ，1.
+After 6700 training step(s),loss on training batch is 0.287167.The batch test accuracy = 1 , 1 ，1.
+After 6800 training step(s),loss on training batch is 0.0168179.The batch test accuracy = 1 , 1 ，1.
+After 6900 training step(s),loss on training batch is 0.00907218.The batch test accuracy = 1 , 1 ，1.
+After 7000 training step(s),loss on training batch is 0.0132666.The batch test accuracy = 1 , 1 ，1.
+After 7100 training step(s),loss on training batch is 0.452701.The batch test accuracy = 1 , 1 ，1.
+After 7200 training step(s),loss on training batch is 0.00647388.The batch test accuracy = 0.992188 , 1 ，1.
+After 7300 training step(s),loss on training batch is 0.00618618.The batch test accuracy = 1 , 1 ，1.
+After 7400 training step(s),loss on training batch is 0.0472256.The batch test accuracy = 1 , 1 ，1.
+After 7500 training step(s),loss on training batch is 0.0801235.The batch test accuracy = 1 , 1 ，1.
+After 7600 training step(s),loss on training batch is 0.0829398.The batch test accuracy = 0.992188 , 1 ，1.
+After 7700 training step(s),loss on training batch is 0.0290454.The batch test accuracy = 1 , 1 ，1.
+After 7800 training step(s),loss on training batch is 0.0135258.The batch test accuracy = 0.992188 , 1 ，1.
+After 7900 training step(s),loss on training batch is 0.897278.The batch test accuracy = 1 , 1 ，1.
+After 8000 training step(s),loss on training batch is 0.313075.The batch test accuracy = 1 , 1 ，1.
+After 8100 training step(s),loss on training batch is 0.159563.The batch test accuracy = 1 , 1 ，1.
+After 8200 training step(s),loss on training batch is 0.0967714.The batch test accuracy = 1 , 1 ，1.
+After 8300 training step(s),loss on training batch is 0.00330315.The batch test accuracy = 1 , 1 ，1.
+After 8400 training step(s),loss on training batch is 0.0297074.The batch test accuracy = 1 , 1 ，1.
+After 8500 training step(s),loss on training batch is 0.0284269.The batch test accuracy = 1 , 1 ，1.
+After 8600 training step(s),loss on training batch is 0.0266216.The batch test accuracy = 0.992188 , 1 ，1.
+After 8700 training step(s),loss on training batch is 1.55725.The batch test accuracy = 1 , 1 ，1.
+After 8800 training step(s),loss on training batch is 0.0202777.The batch test accuracy = 1 , 1 ，1.
+After 8900 training step(s),loss on training batch is 0.0384576.The batch test accuracy = 1 , 1 ，1.
+After 9000 training step(s),loss on training batch is 0.0800114.The batch test accuracy = 0.992188 , 1 ，1.
+After 9100 training step(s),loss on training batch is 0.0676746.The batch test accuracy = 1 , 1 ，1.
+After 9200 training step(s),loss on training batch is 0.0634647.The batch test accuracy = 1 , 1 ，1.
+After 9300 training step(s),loss on training batch is 0.0143786.The batch test accuracy = 1 , 1 ，1.
+After 9400 training step(s),loss on training batch is 3.74457.The batch test accuracy = 1 , 1 ，1.
+After 9500 training step(s),loss on training batch is 3.6762.The batch test accuracy = 1 , 1 ，1.
+After 9600 training step(s),loss on training batch is 0.229691.The batch test accuracy = 1 , 1 ，1.
+After 9700 training step(s),loss on training batch is 0.091359.The batch test accuracy = 1 , 1 ，1.
+After 9800 training step(s),loss on training batch is 0.0173099.The batch test accuracy = 1 , 1 ，1.
+After 9900 training step(s),loss on training batch is 0.141539.The batch test accuracy = 0.992188 , 1 ，1.
+After 10000 training step(s),loss on training batch is 0.117924.The batch test accuracy = 1 , 1 ，1.
+After 10100 training step(s),loss on training batch is 0.313777.The batch test accuracy = 1 , 1 ，1.
+After 10200 training step(s),loss on training batch is 0.796826.The batch test accuracy = 1 , 1 ，1.
+After 10300 training step(s),loss on training batch is 0.897157.The batch test accuracy = 1 , 1 ，1.
+After 10400 training step(s),loss on training batch is 0.0119139.The batch test accuracy = 1 , 1 ，1.
+After 10500 training step(s),loss on training batch is 0.0256031.The batch test accuracy = 1 , 1 ，1.
+After 10600 training step(s),loss on training batch is 0.181382.The batch test accuracy = 0.992188 , 1 ，1.
+After 10700 training step(s),loss on training batch is 0.0232752.The batch test accuracy = 1 , 1 ，1.
+After 10800 training step(s),loss on training batch is 0.0152576.The batch test accuracy = 1 , 1 ，1.
+After 10900 training step(s),loss on training batch is 0.0175857.The batch test accuracy = 1 , 1 ，1.
+After 11000 training step(s),loss on training batch is 0.00862719.The batch test accuracy = 1 , 1 ，1.
+After 11100 training step(s),loss on training batch is 0.127751.The batch test accuracy = 0.992188 , 1 ，1.
+After 11200 training step(s),loss on training batch is 0.0209759.The batch test accuracy = 1 , 1 ，1.
+After 11300 training step(s),loss on training batch is 0.0205557.The batch test accuracy = 1 , 1 ，1.
+After 11400 training step(s),loss on training batch is 0.0361922.The batch test accuracy = 1 , 1 ，1.
+After 11500 training step(s),loss on training batch is 0.446422.The batch test accuracy = 1 , 1 ，1.
+After 11600 training step(s),loss on training batch is 0.919589.The batch test accuracy = 1 , 1 ，1.
+After 11700 training step(s),loss on training batch is 0.783435.The batch test accuracy = 1 , 1 ，1.
+After 11800 training step(s),loss on training batch is 0.0673715.The batch test accuracy = 1 , 1 ，1.
+After 11900 training step(s),loss on training batch is 0.422146.The batch test accuracy = 1 , 1 ，1.
+After 12000 training step(s),loss on training batch is 0.0493538.The batch test accuracy = 1 , 1 ，1.
+After 12100 training step(s),loss on training batch is 0.0469335.The batch test accuracy = 0.992188 , 1 ，1.
+After 12200 training step(s),loss on training batch is 0.0943986.The batch test accuracy = 1 , 1 ，1.
+After 12300 training step(s),loss on training batch is 0.015207.The batch test accuracy = 0.992188 , 1 ，1.
+After 12400 training step(s),loss on training batch is 0.0107965.The batch test accuracy = 1 , 1 ，1.
+After 12500 training step(s),loss on training batch is 0.0133751.The batch test accuracy = 1 , 1 ，1.
+After 12600 training step(s),loss on training batch is 1.45226.The batch test accuracy = 1 , 1 ，1.
+After 12700 training step(s),loss on training batch is 0.0173023.The batch test accuracy = 0.992188 , 1 ，1.
+After 12800 training step(s),loss on training batch is 0.0548362.The batch test accuracy = 0.992188 , 1 ，1.
+After 12900 training step(s),loss on training batch is 0.549774.The batch test accuracy = 1 , 1 ，1.
+After 13000 training step(s),loss on training batch is 0.00747461.The batch test accuracy = 1 , 1 ，1.
+After 13100 training step(s),loss on training batch is 0.0795922.The batch test accuracy = 1 , 1 ，1.
+After 13200 training step(s),loss on training batch is 0.160755.The batch test accuracy = 1 , 1 ，1.
+After 13300 training step(s),loss on training batch is 2.25772.The batch test accuracy = 1 , 1 ，1.
+After 13400 training step(s),loss on training batch is 0.104478.The batch test accuracy = 1 , 1 ，1.
+After 13500 training step(s),loss on training batch is 0.118159.The batch test accuracy = 0.992188 , 1 ，1.
+After 13600 training step(s),loss on training batch is 1.64486.The batch test accuracy = 1 , 1 ，1.
+After 13700 training step(s),loss on training batch is 0.0184345.The batch test accuracy = 1 , 1 ，1.
+After 13800 training step(s),loss on training batch is 0.0379499.The batch test accuracy = 1 , 1 ，1.
+After 13900 training step(s),loss on training batch is 0.835304.The batch test accuracy = 1 , 1 ，1.
+After 14000 training step(s),loss on training batch is 0.017583.The batch test accuracy = 1 , 1 ，1.
+After 14100 training step(s),loss on training batch is 0.0315546.The batch test accuracy = 0.992188 , 1 ，1.
+After 14200 training step(s),loss on training batch is 0.00882724.The batch test accuracy = 1 , 1 ，1.
+After 14300 training step(s),loss on training batch is 0.202595.The batch test accuracy = 1 , 1 ，1.
+After 14400 training step(s),loss on training batch is 0.0277265.The batch test accuracy = 1 , 1 ，1.
+After 14500 training step(s),loss on training batch is 0.0130166.The batch test accuracy = 1 , 1 ，1.
+After 14600 training step(s),loss on training batch is 0.0366084.The batch test accuracy = 1 , 1 ，1.
+After 14700 training step(s),loss on training batch is 0.0654372.The batch test accuracy = 1 , 1 ，1.
+After 14800 training step(s),loss on training batch is 0.0392678.The batch test accuracy = 0.992188 , 1 ，1.
+After 14900 training step(s),loss on training batch is 0.0027874.The batch test accuracy = 1 , 1 ，1.
+After 15000 training step(s),loss on training batch is 1.40513.The batch test accuracy = 1 , 1 ，1.
+After 15100 training step(s),loss on training batch is 0.192411.The batch test accuracy = 1 , 1 ，1.
+After 15200 training step(s),loss on training batch is 0.160803.The batch test accuracy = 1 , 1 ，1.
+After 15300 training step(s),loss on training batch is 0.199855.The batch test accuracy = 1 , 1 ，1.
+After 15400 training step(s),loss on training batch is 0.00487949.The batch test accuracy = 1 , 1 ，1.
+After 15500 training step(s),loss on training batch is 0.00284907.The batch test accuracy = 1 , 1 ，1.
+After 15600 training step(s),loss on training batch is 0.154875.The batch test accuracy = 1 , 1 ，1.
+After 15700 training step(s),loss on training batch is 0.0642149.The batch test accuracy = 1 , 1 ，1.
+After 15800 training step(s),loss on training batch is 0.00278274.The batch test accuracy = 1 , 1 ，1.
+After 15900 training step(s),loss on training batch is 0.0354376.The batch test accuracy = 1 , 1 ，1.
+After 16000 training step(s),loss on training batch is 0.0053983.The batch test accuracy = 1 , 1 ，1.
+After 16100 training step(s),loss on training batch is 0.0254043.The batch test accuracy = 1 , 1 ，1.
+After 16200 training step(s),loss on training batch is 0.039635.The batch test accuracy = 1 , 1 ，1.
+After 16300 training step(s),loss on training batch is 2.3117.The batch test accuracy = 1 , 1 ，1.
+After 16400 training step(s),loss on training batch is 0.00626892.The batch test accuracy = 1 , 1 ，1.
+After 16500 training step(s),loss on training batch is 0.00510493.The batch test accuracy = 1 , 1 ，1.
+After 16600 training step(s),loss on training batch is 0.00425918.The batch test accuracy = 1 , 1 ，1.
+After 16700 training step(s),loss on training batch is 0.00803815.The batch test accuracy = 1 , 1 ，1.
+After 16800 training step(s),loss on training batch is 0.780537.The batch test accuracy = 1 , 1 ，1.
+After 16900 training step(s),loss on training batch is 0.163769.The batch test accuracy = 0.992188 , 1 ，1.
+After 17000 training step(s),loss on training batch is 0.0263685.The batch test accuracy = 1 , 1 ，1.
+After 17100 training step(s),loss on training batch is 0.180727.The batch test accuracy = 1 , 1 ，1.
+After 17200 training step(s),loss on training batch is 0.130801.The batch test accuracy = 1 , 1 ，1.
+After 17300 training step(s),loss on training batch is 0.0851111.The batch test accuracy = 1 , 1 ，1.
+After 17400 training step(s),loss on training batch is 0.0724218.The batch test accuracy = 1 , 1 ，1.
+After 17500 training step(s),loss on training batch is 1.25482.The batch test accuracy = 1 , 1 ，1.
+After 17600 training step(s),loss on training batch is 0.0824822.The batch test accuracy = 1 , 1 ，1.
+After 17700 training step(s),loss on training batch is 0.0523744.The batch test accuracy = 1 , 1 ，1.
+After 17800 training step(s),loss on training batch is 0.14522.The batch test accuracy = 1 , 1 ，1.
+After 17900 training step(s),loss on training batch is 0.0493729.The batch test accuracy = 1 , 1 ，1.
+After 18000 training step(s),loss on training batch is 0.0356303.The batch test accuracy = 1 , 1 ，1.
+After 18100 training step(s),loss on training batch is 0.0227893.The batch test accuracy = 1 , 1 ，1.
+After 18200 training step(s),loss on training batch is 0.0129242.The batch test accuracy = 1 , 1 ，1.
+After 18300 training step(s),loss on training batch is 0.00506063.The batch test accuracy = 1 , 1 ，1.
+After 18400 training step(s),loss on training batch is 0.0145814.The batch test accuracy = 1 , 1 ，1.
+After 18500 training step(s),loss on training batch is 0.199697.The batch test accuracy = 1 , 1 ，1.
+After 18600 training step(s),loss on training batch is 0.00455577.The batch test accuracy = 1 , 1 ，1.
+After 18700 training step(s),loss on training batch is 0.00502512.The batch test accuracy = 1 , 1 ，1.
+After 18800 training step(s),loss on training batch is 0.714485.The batch test accuracy = 1 , 1 ，1.
+After 18900 training step(s),loss on training batch is 0.0161851.The batch test accuracy = 1 , 1 ，1.
+After 19000 training step(s),loss on training batch is 0.0250845.The batch test accuracy = 1 , 1 ，1.
+After 19100 training step(s),loss on training batch is 0.00825515.The batch test accuracy = 1 , 1 ，1.
+After 19200 training step(s),loss on training batch is 0.0257317.The batch test accuracy = 1 , 1 ，1.
+After 19300 training step(s),loss on training batch is 0.0270596.The batch test accuracy = 1 , 1 ，1.
+After 19400 training step(s),loss on training batch is 0.0627228.The batch test accuracy = 1 , 1 ，1.
+After 19500 training step(s),loss on training batch is 0.0385163.The batch test accuracy = 1 , 1 ，1.
+After 19600 training step(s),loss on training batch is 0.0142594.The batch test accuracy = 1 , 1 ，1.
+After 19700 training step(s),loss on training batch is 4.86579.The batch test accuracy = 1 , 1 ，1.
+After 19800 training step(s),loss on training batch is 0.00326922.The batch test accuracy = 1 , 1 ，1.
+After 19900 training step(s),loss on training batch is 0.0945545.The batch test accuracy = 1 , 1 ，1.
+After 20000 training step(s),loss on training batch is 0.00486315.The batch test accuracy = 1 , 1 ，1.
+After 20100 training step(s),loss on training batch is 0.00936649.The batch test accuracy = 1 , 1 ，1.
+After 20200 training step(s),loss on training batch is 0.0196161.The batch test accuracy = 1 , 1 ，1.
+After 20300 training step(s),loss on training batch is 0.0995234.The batch test accuracy = 1 , 1 ，1.
+After 20400 training step(s),loss on training batch is 0.619706.The batch test accuracy = 1 , 1 ，1.
+After 20500 training step(s),loss on training batch is 0.00454154.The batch test accuracy = 1 , 1 ，1.
+After 20600 training step(s),loss on training batch is 0.00153685.The batch test accuracy = 1 , 1 ，1.
+After 20700 training step(s),loss on training batch is 0.0282464.The batch test accuracy = 1 , 1 ，1.
+After 20800 training step(s),loss on training batch is 0.110459.The batch test accuracy = 1 , 1 ，1.
+After 20900 training step(s),loss on training batch is 0.0312722.The batch test accuracy = 1 , 1 ，1.
+After 21000 training step(s),loss on training batch is 0.0156358.The batch test accuracy = 1 , 1 ，1.
+After 21100 training step(s),loss on training batch is 0.00768977.The batch test accuracy = 1 , 1 ，1.
+After 21200 training step(s),loss on training batch is 0.0386348.The batch test accuracy = 1 , 1 ，1.
+After 21300 training step(s),loss on training batch is 0.38208.The batch test accuracy = 1 , 1 ，1.
+After 21400 training step(s),loss on training batch is 0.022028.The batch test accuracy = 1 , 1 ，1.
+After 21500 training step(s),loss on training batch is 0.0348364.The batch test accuracy = 1 , 1 ，1.
+After 21600 training step(s),loss on training batch is 0.230213.The batch test accuracy = 1 , 1 ，1.
+After 21700 training step(s),loss on training batch is 0.165613.The batch test accuracy = 1 , 1 ，1.
+After 21800 training step(s),loss on training batch is 0.00812626.The batch test accuracy = 1 , 1 ，1.
+After 21900 training step(s),loss on training batch is 0.00575876.The batch test accuracy = 1 , 1 ，1.
+After 22000 training step(s),loss on training batch is 0.00451475.The batch test accuracy = 1 , 1 ，1.
+After 22100 training step(s),loss on training batch is 0.0279144.The batch test accuracy = 1 , 1 ，1.
+After 22200 training step(s),loss on training batch is 0.019045.The batch test accuracy = 1 , 1 ，1.
+After 22300 training step(s),loss on training batch is 0.0431612.The batch test accuracy = 0.992188 , 1 ，1.
+After 22400 training step(s),loss on training batch is 0.00858719.The batch test accuracy = 1 , 1 ，1.
+After 22500 training step(s),loss on training batch is 0.104384.The batch test accuracy = 1 , 1 ，1.
+After 22600 training step(s),loss on training batch is 0.0240382.The batch test accuracy = 1 , 1 ，1.
+After 22700 training step(s),loss on training batch is 0.0344119.The batch test accuracy = 1 , 1 ，1.
+After 22800 training step(s),loss on training batch is 0.0223746.The batch test accuracy = 0.992188 , 1 ，1.
+After 22900 training step(s),loss on training batch is 0.0302143.The batch test accuracy = 1 , 1 ，1.
+After 23000 training step(s),loss on training batch is 0.0261312.The batch test accuracy = 1 , 1 ，1.
+After 23100 training step(s),loss on training batch is 0.0212079.The batch test accuracy = 1 , 1 ，1.
+After 23200 training step(s),loss on training batch is 0.190007.The batch test accuracy = 1 , 1 ，1.
+After 23300 training step(s),loss on training batch is 0.0443396.The batch test accuracy = 1 , 1 ，1.
+After 23400 training step(s),loss on training batch is 0.149416.The batch test accuracy = 1 , 1 ，1.
+After 23500 training step(s),loss on training batch is 1.6339.The batch test accuracy = 1 , 1 ，1.
+After 23600 training step(s),loss on training batch is 0.0204374.The batch test accuracy = 1 , 1 ，1.
+After 23700 training step(s),loss on training batch is 2.1094.The batch test accuracy = 1 , 1 ，1.
+After 23800 training step(s),loss on training batch is 0.00207167.The batch test accuracy = 1 , 1 ，1.
+After 23900 training step(s),loss on training batch is 0.0281354.The batch test accuracy = 1 , 1 ，1.
+After 24000 training step(s),loss on training batch is 0.0356466.The batch test accuracy = 1 , 1 ，1.
+After 24100 training step(s),loss on training batch is 2.06694.The batch test accuracy = 0.992188 , 1 ，1.
+After 24200 training step(s),loss on training batch is 0.236947.The batch test accuracy = 1 , 1 ，1.
+After 24300 training step(s),loss on training batch is 0.110985.The batch test accuracy = 1 , 1 ，1.
+After 24400 training step(s),loss on training batch is 0.0442827.The batch test accuracy = 1 , 1 ，1.
+After 24500 training step(s),loss on training batch is 0.0157714.The batch test accuracy = 1 , 1 ，1.
+After 24600 training step(s),loss on training batch is 0.218057.The batch test accuracy = 1 , 1 ，1.
+After 24700 training step(s),loss on training batch is 0.0152598.The batch test accuracy = 1 , 1 ，1.
+After 24800 training step(s),loss on training batch is 0.00256623.The batch test accuracy = 1 , 1 ，1.
+After 24900 training step(s),loss on training batch is 0.0214378.The batch test accuracy = 1 , 1 ，1.
+After 25000 training step(s),loss on training batch is 0.00772845.The batch test accuracy = 1 , 1 ，1.
+After 25100 training step(s),loss on training batch is 0.0116406.The batch test accuracy = 1 , 1 ，1.
+After 25200 training step(s),loss on training batch is 0.0142184.The batch test accuracy = 1 , 1 ，1.
+After 25300 training step(s),loss on training batch is 0.00508676.The batch test accuracy = 1 , 1 ，1.
+After 25400 training step(s),loss on training batch is 0.000464814.The batch test accuracy = 1 , 1 ，1.
+After 25500 training step(s),loss on training batch is 0.00483159.The batch test accuracy = 1 , 1 ，1.
+After 25600 training step(s),loss on training batch is 0.0068167.The batch test accuracy = 1 , 1 ，1.
+After 25700 training step(s),loss on training batch is 0.0085693.The batch test accuracy = 1 , 1 ，1.
+After 25800 training step(s),loss on training batch is 0.0129765.The batch test accuracy = 1 , 1 ，1.
+After 25900 training step(s),loss on training batch is 0.00219179.The batch test accuracy = 1 , 1 ，1.
+After 26000 training step(s),loss on training batch is 0.000408897.The batch test accuracy = 0.992188 , 1 ，1.
+After 26100 training step(s),loss on training batch is 0.152866.The batch test accuracy = 1 , 1 ，1.
+After 26200 training step(s),loss on training batch is 0.0391515.The batch test accuracy = 1 , 1 ，1.
+After 26300 training step(s),loss on training batch is 0.240219.The batch test accuracy = 1 , 1 ，1.
+After 26400 training step(s),loss on training batch is 0.00772793.The batch test accuracy = 1 , 1 ，1.
+After 26500 training step(s),loss on training batch is 0.0291519.The batch test accuracy = 1 , 1 ，1.
+After 26600 training step(s),loss on training batch is 0.0040914.The batch test accuracy = 1 , 1 ，1.
+After 26700 training step(s),loss on training batch is 0.00676811.The batch test accuracy = 1 , 1 ，1.
+After 26800 training step(s),loss on training batch is 0.0566823.The batch test accuracy = 1 , 1 ，1.
+After 26900 training step(s),loss on training batch is 0.00620802.The batch test accuracy = 1 , 1 ，1.
+After 27000 training step(s),loss on training batch is 0.0358241.The batch test accuracy = 1 , 1 ，1.
+After 27100 training step(s),loss on training batch is 0.0561536.The batch test accuracy = 1 , 1 ，1.
+After 27200 training step(s),loss on training batch is 0.0202569.The batch test accuracy = 1 , 1 ，1.
+After 27300 training step(s),loss on training batch is 0.0423035.The batch test accuracy = 1 , 1 ，1.
+After 27400 training step(s),loss on training batch is 0.0013231.The batch test accuracy = 0.992188 , 1 ，1.
+After 27500 training step(s),loss on training batch is 0.0146415.The batch test accuracy = 1 , 1 ，1.
+After 27600 training step(s),loss on training batch is 0.00789529.The batch test accuracy = 1 , 1 ，1.
+After 27700 training step(s),loss on training batch is 0.00280508.The batch test accuracy = 1 , 1 ，1.
+After 27800 training step(s),loss on training batch is 0.023157.The batch test accuracy = 0.992188 , 1 ，1.
+After 27900 training step(s),loss on training batch is 0.0159888.The batch test accuracy = 1 , 1 ，1.
+After 28000 training step(s),loss on training batch is 0.0230926.The batch test accuracy = 0.992188 , 1 ，1.
+After 28100 training step(s),loss on training batch is 0.00696946.The batch test accuracy = 1 , 1 ，1.
+After 28200 training step(s),loss on training batch is 0.0184593.The batch test accuracy = 1 , 1 ，1.
+After 28300 training step(s),loss on training batch is 0.06869.The batch test accuracy = 1 , 1 ，1.
+After 28400 training step(s),loss on training batch is 0.0136054.The batch test accuracy = 1 , 1 ，1.
+After 28500 training step(s),loss on training batch is 0.00763645.The batch test accuracy = 1 , 1 ，1.
+After 28600 training step(s),loss on training batch is 0.0618325.The batch test accuracy = 1 , 1 ，1.
+After 28700 training step(s),loss on training batch is 0.00289645.The batch test accuracy = 0.992188 , 1 ，1.
+After 28800 training step(s),loss on training batch is 0.402497.The batch test accuracy = 1 , 1 ，1.
+After 28900 training step(s),loss on training batch is 5.44435.The batch test accuracy = 1 , 1 ，1.
+After 29000 training step(s),loss on training batch is 0.0660589.The batch test accuracy = 1 , 1 ，1.
+After 29100 training step(s),loss on training batch is 0.0142218.The batch test accuracy = 1 , 1 ，1.
+After 29200 training step(s),loss on training batch is 0.0401404.The batch test accuracy = 1 , 1 ，1.
+After 29300 training step(s),loss on training batch is 1.43485.The batch test accuracy = 1 , 1 ，1.
+After 29400 training step(s),loss on training batch is 0.0360579.The batch test accuracy = 1 , 1 ，1.
+After 29500 training step(s),loss on training batch is 0.00345887.The batch test accuracy = 1 , 1 ，1.
+After 29600 training step(s),loss on training batch is 0.323516.The batch test accuracy = 0.992188 , 1 ，1.
+After 29700 training step(s),loss on training batch is 0.00863477.The batch test accuracy = 1 , 1 ，1.
+After 29800 training step(s),loss on training batch is 0.00218294.The batch test accuracy = 1 , 1 ，1.
+After 29900 training step(s),loss on training batch is 0.00949997.The batch test accuracy = 1 , 1 ，1.
+Train finished...
+From /home/archlab/AI/simple-cr/data.py:58: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+From /home/archlab/AI/simple-cr/models/basiccnn3.py:53: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+From /home/archlab/AI/simple-cr/models/basiccnn3.py:37: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/archlab/AI/simple-cr/models/basiccnn3.py:119: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+Large dropout rate: 0.7 (>0.5). In TensorFlow 2.x, dropout() uses dropout rate instead of keep_prob. Please ensure that this is intended.
+From /home/archlab/AI/simple-cr/train.py:93: The name tf.log is deprecated. Please use tf.math.log instead.
+
+From /home/archlab/AI/simple-cr/train.py:95: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+From /home/archlab/AI/simple-cr/train.py:97: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+From /home/archlab/AI/simple-cr/train.py:100: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+From /home/archlab/AI/simple-cr/train.py:104: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+From /home/archlab/AI/simple-cr/train.py:106: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+From /home/archlab/AI/simple-cr/train.py:107: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+From /home/archlab/AI/simple-cr/train.py:119: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+`tf.train.start_queue_runners()` was called when no queue runners were defined. You can safely remove the call to this deprecated function.
+From /home/archlab/AI/simple-cr/data.py:58: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+From /home/archlab/AI/simple-cr/models/basiccnn3.py:53: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+From /home/archlab/AI/simple-cr/models/basiccnn3.py:37: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/archlab/AI/simple-cr/data.py:58: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+From /home/archlab/AI/simple-cr/models/basiccnn3.py:53: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+From /home/archlab/AI/simple-cr/models/basiccnn3.py:37: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/archlab/AI/simple-cr/models/basiccnn3.py:119: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+Large dropout rate: 0.7 (>0.5). In TensorFlow 2.x, dropout() uses dropout rate instead of keep_prob. Please ensure that this is intended.
+From /home/archlab/AI/simple-cr/train.py:93: The name tf.log is deprecated. Please use tf.math.log instead.
+
+From /home/archlab/AI/simple-cr/train.py:95: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+From /home/archlab/AI/simple-cr/train.py:97: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+From /home/archlab/AI/simple-cr/train.py:100: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+From /home/archlab/AI/simple-cr/train.py:104: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+From /home/archlab/AI/simple-cr/train.py:106: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+From /home/archlab/AI/simple-cr/train.py:107: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+From /home/archlab/AI/simple-cr/train.py:119: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+`tf.train.start_queue_runners()` was called when no queue runners were defined. You can safely remove the call to this deprecated function.
+After 0 training step(s),loss on training batch is 451.519.The batch test accuracy = 0.03125 , 0.132812 ，0.265625.
+After 100 training step(s),loss on training batch is 451.461.The batch test accuracy = 0.046875 , 0.203125 ，0.304688.
+After 200 training step(s),loss on training batch is 427.157.The batch test accuracy = 0.0859375 , 0.390625 ，0.570312.
+Interrupted on request...
+Train finished...
+From /home/archlab/AI/simple-cr/data.py:58: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+From /home/archlab/AI/simple-cr/models/basiccnn3.py:53: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+From /home/archlab/AI/simple-cr/models/basiccnn3.py:37: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/archlab/AI/simple-cr/models/basiccnn3.py:119: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+Large dropout rate: 0.7 (>0.5). In TensorFlow 2.x, dropout() uses dropout rate instead of keep_prob. Please ensure that this is intended.
+From /home/archlab/AI/simple-cr/train.py:93: The name tf.log is deprecated. Please use tf.math.log instead.
+
+From /home/archlab/AI/simple-cr/train.py:95: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+From /home/archlab/AI/simple-cr/train.py:97: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+From /home/archlab/AI/simple-cr/train.py:100: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+From /home/archlab/AI/simple-cr/train.py:104: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+From /home/archlab/AI/simple-cr/train.py:106: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+From /home/archlab/AI/simple-cr/train.py:107: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+From /home/archlab/miniconda3/envs/tf14/lib/python3.7/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+Restoring parameters from ./checkpoint_x2/trainnum_30000_-0
+Resume training ... Start from step 0 / 30000 .
+From /home/archlab/AI/simple-cr/train.py:119: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+`tf.train.start_queue_runners()` was called when no queue runners were defined. You can safely remove the call to this deprecated function.
+After 0 training step(s),loss on training batch is 326.792.The batch test accuracy = 0.289062 , 0.640625 ，0.835938.
+After 100 training step(s),loss on training batch is 223.538.The batch test accuracy = 0.460938 , 0.890625 ，0.921875.
+After 200 training step(s),loss on training batch is 187.351.The batch test accuracy = 0.546875 , 0.882812 ，0.953125.
+After 300 training step(s),loss on training batch is 127.901.The batch test accuracy = 0.65625 , 0.976562 ，0.992188.
+After 400 training step(s),loss on training batch is 105.633.The batch test accuracy = 0.742188 , 0.976562 ，1.
+After 500 training step(s),loss on training batch is 79.8225.The batch test accuracy = 0.726562 , 0.953125 ，0.976562.
+After 600 training step(s),loss on training batch is 89.5935.The batch test accuracy = 0.8125 , 1 ，1.
+After 700 training step(s),loss on training batch is 65.0935.The batch test accuracy = 0.804688 , 1 ，1.
+After 800 training step(s),loss on training batch is 64.5663.The batch test accuracy = 0.78125 , 0.976562 ，1.
+After 900 training step(s),loss on training batch is 54.5046.The batch test accuracy = 0.921875 , 1 ，1.
+After 1000 training step(s),loss on training batch is 35.0906.The batch test accuracy = 0.882812 , 1 ，1.
+After 1100 training step(s),loss on training batch is 35.4611.The batch test accuracy = 0.882812 , 1 ，1.
+After 1200 training step(s),loss on training batch is 35.7493.The batch test accuracy = 0.882812 , 1 ，1.
+After 1300 training step(s),loss on training batch is 30.7428.The batch test accuracy = 0.867188 , 1 ，1.
+After 1400 training step(s),loss on training batch is 37.875.The batch test accuracy = 0.90625 , 1 ，1.
+After 1500 training step(s),loss on training batch is 16.6806.The batch test accuracy = 0.921875 , 1 ，1.
+After 1600 training step(s),loss on training batch is 26.4973.The batch test accuracy = 0.945312 , 1 ，1.
+After 1700 training step(s),loss on training batch is 30.3759.The batch test accuracy = 0.929688 , 0.992188 ，1.
+After 1800 training step(s),loss on training batch is 13.4406.The batch test accuracy = 0.945312 , 1 ，1.
+After 1900 training step(s),loss on training batch is 10.2107.The batch test accuracy = 0.953125 , 1 ，1.
+After 2000 training step(s),loss on training batch is 16.4999.The batch test accuracy = 0.9375 , 1 ，1.
+After 2100 training step(s),loss on training batch is 31.9774.The batch test accuracy = 0.976562 , 1 ，1.
+After 2200 training step(s),loss on training batch is 10.8254.The batch test accuracy = 0.96875 , 1 ，1.
+After 2300 training step(s),loss on training batch is 20.044.The batch test accuracy = 0.945312 , 0.992188 ，1.
+After 2400 training step(s),loss on training batch is 11.646.The batch test accuracy = 0.9375 , 1 ，1.
+After 2500 training step(s),loss on training batch is 26.1502.The batch test accuracy = 0.992188 , 1 ，1.
+After 2600 training step(s),loss on training batch is 12.7912.The batch test accuracy = 0.984375 , 1 ，1.
+After 2700 training step(s),loss on training batch is 13.3583.The batch test accuracy = 0.929688 , 1 ，1.
+After 2800 training step(s),loss on training batch is 12.9169.The batch test accuracy = 0.953125 , 1 ，1.
+After 2900 training step(s),loss on training batch is 8.30547.The batch test accuracy = 0.992188 , 1 ，1.
+After 3000 training step(s),loss on training batch is 6.05567.The batch test accuracy = 0.960938 , 1 ，1.
+After 3100 training step(s),loss on training batch is 9.71723.The batch test accuracy = 0.984375 , 1 ，1.
+After 3200 training step(s),loss on training batch is 6.18308.The batch test accuracy = 0.976562 , 1 ，1.
+After 3300 training step(s),loss on training batch is 14.6895.The batch test accuracy = 0.984375 , 1 ，1.
+After 3400 training step(s),loss on training batch is 7.57095.The batch test accuracy = 0.992188 , 1 ，1.
+After 3500 training step(s),loss on training batch is 14.9945.The batch test accuracy = 0.976562 , 1 ，1.
+After 3600 training step(s),loss on training batch is 11.8729.The batch test accuracy = 0.976562 , 1 ，1.
+After 3700 training step(s),loss on training batch is 12.2538.The batch test accuracy = 0.992188 , 1 ，1.
+After 3800 training step(s),loss on training batch is 5.4519.The batch test accuracy = 0.972222 , 1 ，1.
+After 3900 training step(s),loss on training batch is 8.89626.The batch test accuracy = 1 , 1 ，1.
+After 4000 training step(s),loss on training batch is 6.09586.The batch test accuracy = 0.992188 , 1 ，1.
+After 4100 training step(s),loss on training batch is 7.15086.The batch test accuracy = 0.984375 , 1 ，1.
+After 4200 training step(s),loss on training batch is 6.2779.The batch test accuracy = 1 , 1 ，1.
+After 4300 training step(s),loss on training batch is 5.44182.The batch test accuracy = 0.96875 , 1 ，1.
+After 4400 training step(s),loss on training batch is 14.4434.The batch test accuracy = 0.992188 , 1 ，1.
+After 4500 training step(s),loss on training batch is 4.91927.The batch test accuracy = 0.984375 , 1 ，1.
+After 4600 training step(s),loss on training batch is 2.76049.The batch test accuracy = 0.992188 , 1 ，1.
+After 4700 training step(s),loss on training batch is 9.68694.The batch test accuracy = 0.96875 , 1 ，1.
+After 4800 training step(s),loss on training batch is 3.69444.The batch test accuracy = 0.976562 , 1 ，1.
+After 4900 training step(s),loss on training batch is 4.2111.The batch test accuracy = 1 , 1 ，1.
+After 5000 training step(s),loss on training batch is 3.40025.The batch test accuracy = 0.960938 , 1 ，1.
+After 5100 training step(s),loss on training batch is 0.681218.The batch test accuracy = 0.984375 , 1 ，1.
+After 5200 training step(s),loss on training batch is 2.67218.The batch test accuracy = 0.992188 , 1 ，1.
+After 5300 training step(s),loss on training batch is 3.40214.The batch test accuracy = 1 , 1 ，1.
+After 5400 training step(s),loss on training batch is 12.1513.The batch test accuracy = 0.992188 , 1 ，1.
+After 5500 training step(s),loss on training batch is 1.90409.The batch test accuracy = 1 , 1 ，1.
+After 5600 training step(s),loss on training batch is 1.11705.The batch test accuracy = 0.96875 , 1 ，1.
+After 5700 training step(s),loss on training batch is 5.37342.The batch test accuracy = 0.992188 , 1 ，1.
+After 5800 training step(s),loss on training batch is 5.02075.The batch test accuracy = 0.984375 , 1 ，1.
+After 5900 training step(s),loss on training batch is 2.40624.The batch test accuracy = 0.984375 , 1 ，1.
+After 6000 training step(s),loss on training batch is 2.60467.The batch test accuracy = 0.960938 , 1 ，1.
+After 6100 training step(s),loss on training batch is 8.39887.The batch test accuracy = 1 , 1 ，1.
+After 6200 training step(s),loss on training batch is 3.51549.The batch test accuracy = 1 , 1 ，1.
+After 6300 training step(s),loss on training batch is 1.21034.The batch test accuracy = 1 , 1 ，1.
+After 6400 training step(s),loss on training batch is 3.90412.The batch test accuracy = 0.992188 , 1 ，1.
+After 6500 training step(s),loss on training batch is 0.895257.The batch test accuracy = 1 , 1 ，1.
+After 6600 training step(s),loss on training batch is 2.7825.The batch test accuracy = 0.992188 , 1 ，1.
+After 6700 training step(s),loss on training batch is 3.04002.The batch test accuracy = 0.992188 , 1 ，1.
+After 6800 training step(s),loss on training batch is 0.852601.The batch test accuracy = 0.992188 , 1 ，1.
+After 6900 training step(s),loss on training batch is 1.6794.The batch test accuracy = 1 , 1 ，1.
+After 7000 training step(s),loss on training batch is 1.17045.The batch test accuracy = 0.992188 , 1 ，1.
+After 7100 training step(s),loss on training batch is 5.04488.The batch test accuracy = 0.984375 , 1 ，1.
+After 7200 training step(s),loss on training batch is 0.854708.The batch test accuracy = 0.992188 , 1 ，1.
+After 7300 training step(s),loss on training batch is 0.472814.The batch test accuracy = 0.992188 , 1 ，1.
+After 7400 training step(s),loss on training batch is 0.613385.The batch test accuracy = 1 , 1 ，1.
+After 7500 training step(s),loss on training batch is 2.37335.The batch test accuracy = 0.992188 , 1 ，1.
+After 7600 training step(s),loss on training batch is 0.249396.The batch test accuracy = 0.984375 , 1 ，1.
+After 7700 training step(s),loss on training batch is 1.40248.The batch test accuracy = 0.992188 , 1 ，1.
+After 7800 training step(s),loss on training batch is 7.75158.The batch test accuracy = 1 , 1 ，1.
+After 7900 training step(s),loss on training batch is 0.637718.The batch test accuracy = 1 , 1 ，1.
+After 8000 training step(s),loss on training batch is 0.412365.The batch test accuracy = 1 , 1 ，1.
+After 8100 training step(s),loss on training batch is 1.7656.The batch test accuracy = 1 , 1 ，1.
+After 8200 training step(s),loss on training batch is 0.491929.The batch test accuracy = 1 , 1 ，1.
+After 8300 training step(s),loss on training batch is 0.123995.The batch test accuracy = 1 , 1 ，1.
+After 8400 training step(s),loss on training batch is 1.12919.The batch test accuracy = 1 , 1 ，1.
+After 8500 training step(s),loss on training batch is 1.22997.The batch test accuracy = 0.992188 , 1 ，1.
+After 8600 training step(s),loss on training batch is 0.146446.The batch test accuracy = 1 , 1 ，1.
+After 8700 training step(s),loss on training batch is 0.627441.The batch test accuracy = 0.992188 , 1 ，1.
+After 8800 training step(s),loss on training batch is 0.31399.The batch test accuracy = 0.976562 , 1 ，1.
+After 8900 training step(s),loss on training batch is 0.694774.The batch test accuracy = 1 , 1 ，1.
+After 9000 training step(s),loss on training batch is 4.48602.The batch test accuracy = 1 , 1 ，1.
+After 9100 training step(s),loss on training batch is 1.36147.The batch test accuracy = 0.992188 , 1 ，1.
+After 9200 training step(s),loss on training batch is 2.7229.The batch test accuracy = 0.992188 , 1 ，1.
+After 9300 training step(s),loss on training batch is 0.401416.The batch test accuracy = 0.992188 , 1 ，1.
+After 9400 training step(s),loss on training batch is 1.28804.The batch test accuracy = 1 , 1 ，1.
+After 9500 training step(s),loss on training batch is 0.345499.The batch test accuracy = 1 , 1 ，1.
+After 9600 training step(s),loss on training batch is 0.0791042.The batch test accuracy = 1 , 1 ，1.
+After 9700 training step(s),loss on training batch is 5.23022.The batch test accuracy = 0.992188 , 1 ，1.
+After 9800 training step(s),loss on training batch is 1.25489.The batch test accuracy = 1 , 1 ，1.
+After 9900 training step(s),loss on training batch is 1.82601.The batch test accuracy = 1 , 1 ，1.
+After 10000 training step(s),loss on training batch is 0.151131.The batch test accuracy = 1 , 1 ，1.
+After 10100 training step(s),loss on training batch is 1.90119.The batch test accuracy = 0.992188 , 1 ，1.
+After 10200 training step(s),loss on training batch is 0.338859.The batch test accuracy = 1 , 1 ，1.
+After 10300 training step(s),loss on training batch is 0.473969.The batch test accuracy = 1 , 1 ，1.
+After 10400 training step(s),loss on training batch is 0.0748901.The batch test accuracy = 1 , 1 ，1.
+After 10500 training step(s),loss on training batch is 5.02278.The batch test accuracy = 0.984375 , 1 ，1.
+After 10600 training step(s),loss on training batch is 1.59294.The batch test accuracy = 1 , 1 ，1.
+After 10700 training step(s),loss on training batch is 0.453274.The batch test accuracy = 1 , 1 ，1.
+After 10800 training step(s),loss on training batch is 2.3111.The batch test accuracy = 1 , 1 ，1.
+After 10900 training step(s),loss on training batch is 2.97176.The batch test accuracy = 1 , 1 ，1.
+After 11000 training step(s),loss on training batch is 0.335094.The batch test accuracy = 1 , 1 ，1.
+After 11100 training step(s),loss on training batch is 4.19187.The batch test accuracy = 0.992188 , 1 ，1.
+After 11200 training step(s),loss on training batch is 5.21793.The batch test accuracy = 0.992188 , 1 ，1.
+After 11300 training step(s),loss on training batch is 0.946426.The batch test accuracy = 1 , 1 ，1.
+After 11400 training step(s),loss on training batch is 0.797806.The batch test accuracy = 1 , 1 ，1.
+After 11500 training step(s),loss on training batch is 2.45973.The batch test accuracy = 0.992188 , 1 ，1.
+After 11600 training step(s),loss on training batch is 0.869733.The batch test accuracy = 1 , 1 ，1.
+After 11700 training step(s),loss on training batch is 1.58921.The batch test accuracy = 1 , 1 ，1.
+After 11800 training step(s),loss on training batch is 0.35742.The batch test accuracy = 1 , 1 ，1.
+After 11900 training step(s),loss on training batch is 0.754932.The batch test accuracy = 1 , 1 ，1.
+After 12000 training step(s),loss on training batch is 2.9346.The batch test accuracy = 1 , 1 ，1.
+After 12100 training step(s),loss on training batch is 0.448676.The batch test accuracy = 0.992188 , 1 ，1.
+After 12200 training step(s),loss on training batch is 0.417212.The batch test accuracy = 1 , 1 ，1.
+After 12300 training step(s),loss on training batch is 0.56877.The batch test accuracy = 1 , 1 ，1.
+After 12400 training step(s),loss on training batch is 1.01246.The batch test accuracy = 1 , 1 ，1.
+After 12500 training step(s),loss on training batch is 6.81612.The batch test accuracy = 0.984375 , 1 ，1.
+After 12600 training step(s),loss on training batch is 4.32712.The batch test accuracy = 0.984375 , 1 ，1.
+After 12700 training step(s),loss on training batch is 0.46397.The batch test accuracy = 1 , 1 ，1.
+After 12800 training step(s),loss on training batch is 0.154615.The batch test accuracy = 0.992188 , 1 ，1.
+After 12900 training step(s),loss on training batch is 0.368599.The batch test accuracy = 1 , 1 ，1.
+After 13000 training step(s),loss on training batch is 0.313231.The batch test accuracy = 1 , 1 ，1.
+After 13100 training step(s),loss on training batch is 0.391445.The batch test accuracy = 1 , 1 ，1.
+After 13200 training step(s),loss on training batch is 0.609224.The batch test accuracy = 1 , 1 ，1.
+After 13300 training step(s),loss on training batch is 0.0472513.The batch test accuracy = 0.992188 , 1 ，1.
+After 13400 training step(s),loss on training batch is 0.325245.The batch test accuracy = 0.992188 , 1 ，1.
+After 13500 training step(s),loss on training batch is 2.87921.The batch test accuracy = 0.992188 , 1 ，1.
+After 13600 training step(s),loss on training batch is 0.755677.The batch test accuracy = 1 , 1 ，1.
+After 13700 training step(s),loss on training batch is 1.18615.The batch test accuracy = 1 , 1 ，1.
+After 13800 training step(s),loss on training batch is 0.141377.The batch test accuracy = 1 , 1 ，1.
+After 13900 training step(s),loss on training batch is 0.29739.The batch test accuracy = 0.992188 , 1 ，1.
+After 14000 training step(s),loss on training batch is 0.781188.The batch test accuracy = 0.984375 , 1 ，1.
+After 14100 training step(s),loss on training batch is 1.51321.The batch test accuracy = 0.992188 , 1 ，1.
+After 14200 training step(s),loss on training batch is 0.485459.The batch test accuracy = 0.992188 , 1 ，1.
+After 14300 training step(s),loss on training batch is 1.90785.The batch test accuracy = 1 , 1 ，1.
+After 14400 training step(s),loss on training batch is 0.263488.The batch test accuracy = 1 , 1 ，1.
+After 14500 training step(s),loss on training batch is 0.151002.The batch test accuracy = 0.992188 , 1 ，1.
+After 14600 training step(s),loss on training batch is 0.0915378.The batch test accuracy = 1 , 1 ，1.
+After 14700 training step(s),loss on training batch is 0.174381.The batch test accuracy = 1 , 1 ，1.
+After 14800 training step(s),loss on training batch is 0.900985.The batch test accuracy = 0.992188 , 1 ，1.
+After 14900 training step(s),loss on training batch is 0.298928.The batch test accuracy = 1 , 1 ，1.
+After 15000 training step(s),loss on training batch is 1.44601.The batch test accuracy = 1 , 1 ，1.
+After 15100 training step(s),loss on training batch is 0.636849.The batch test accuracy = 1 , 1 ，1.
+After 15200 training step(s),loss on training batch is 1.48791.The batch test accuracy = 0.992188 , 1 ，1.
+After 15300 training step(s),loss on training batch is 0.265888.The batch test accuracy = 1 , 1 ，1.
+After 15400 training step(s),loss on training batch is 0.42049.The batch test accuracy = 1 , 1 ，1.
+After 15500 training step(s),loss on training batch is 0.0204604.The batch test accuracy = 1 , 1 ，1.
+After 15600 training step(s),loss on training batch is 0.309932.The batch test accuracy = 1 , 1 ，1.
+After 15700 training step(s),loss on training batch is 0.045941.The batch test accuracy = 1 , 1 ，1.
+After 15800 training step(s),loss on training batch is 0.553383.The batch test accuracy = 1 , 1 ，1.
+After 15900 training step(s),loss on training batch is 0.197631.The batch test accuracy = 1 , 1 ，1.
+After 16000 training step(s),loss on training batch is 0.0726818.The batch test accuracy = 1 , 1 ，1.
+After 16100 training step(s),loss on training batch is 1.03076.The batch test accuracy = 0.992188 , 1 ，1.
+After 16200 training step(s),loss on training batch is 0.0181713.The batch test accuracy = 0.984375 , 1 ，1.
+After 16300 training step(s),loss on training batch is 7.88366.The batch test accuracy = 1 , 1 ，1.
+After 16400 training step(s),loss on training batch is 0.339601.The batch test accuracy = 0.984375 , 1 ，1.
+After 16500 training step(s),loss on training batch is 0.850775.The batch test accuracy = 1 , 1 ，1.
+After 16600 training step(s),loss on training batch is 0.522089.The batch test accuracy = 1 , 1 ，1.
+After 16700 training step(s),loss on training batch is 0.78008.The batch test accuracy = 1 , 1 ，1.
+After 16800 training step(s),loss on training batch is 0.0492695.The batch test accuracy = 0.992188 , 1 ，1.
+After 16900 training step(s),loss on training batch is 3.82777.The batch test accuracy = 0.992188 , 1 ，1.
+After 17000 training step(s),loss on training batch is 0.652111.The batch test accuracy = 1 , 1 ，1.
+After 17100 training step(s),loss on training batch is 0.120195.The batch test accuracy = 1 , 1 ，1.
+After 17200 training step(s),loss on training batch is 0.945079.The batch test accuracy = 1 , 1 ，1.
+After 17300 training step(s),loss on training batch is 0.517955.The batch test accuracy = 1 , 1 ，1.
+After 17400 training step(s),loss on training batch is 0.598319.The batch test accuracy = 1 , 1 ，1.
+After 17500 training step(s),loss on training batch is 0.183722.The batch test accuracy = 1 , 1 ，1.
+After 17600 training step(s),loss on training batch is 0.239071.The batch test accuracy = 1 , 1 ，1.
+After 17700 training step(s),loss on training batch is 0.068268.The batch test accuracy = 1 , 1 ，1.
+After 17800 training step(s),loss on training batch is 0.0974475.The batch test accuracy = 1 , 1 ，1.
+After 17900 training step(s),loss on training batch is 0.713601.The batch test accuracy = 0.992188 , 1 ，1.
+After 18000 training step(s),loss on training batch is 0.0961199.The batch test accuracy = 1 , 1 ，1.
+After 18100 training step(s),loss on training batch is 0.0496725.The batch test accuracy = 1 , 1 ，1.
+After 18200 training step(s),loss on training batch is 0.372038.The batch test accuracy = 1 , 1 ，1.
+After 18300 training step(s),loss on training batch is 0.539367.The batch test accuracy = 1 , 1 ，1.
+After 18400 training step(s),loss on training batch is 0.109163.The batch test accuracy = 0.992188 , 1 ，1.
+After 18500 training step(s),loss on training batch is 0.340272.The batch test accuracy = 1 , 1 ，1.
+After 18600 training step(s),loss on training batch is 0.235776.The batch test accuracy = 1 , 1 ，1.
+After 18700 training step(s),loss on training batch is 0.20955.The batch test accuracy = 1 , 1 ，1.
+After 18800 training step(s),loss on training batch is 1.12283.The batch test accuracy = 1 , 1 ，1.
+After 18900 training step(s),loss on training batch is 0.0389792.The batch test accuracy = 0.992188 , 1 ，1.
+After 19000 training step(s),loss on training batch is 0.108156.The batch test accuracy = 1 , 1 ，1.
+After 19100 training step(s),loss on training batch is 0.0237162.The batch test accuracy = 1 , 1 ，1.
+After 19200 training step(s),loss on training batch is 1.58341.The batch test accuracy = 1 , 1 ，1.
+After 19300 training step(s),loss on training batch is 0.159985.The batch test accuracy = 0.992188 , 1 ，1.
+After 19400 training step(s),loss on training batch is 5.35548.The batch test accuracy = 1 , 1 ，1.
+After 19500 training step(s),loss on training batch is 0.617335.The batch test accuracy = 1 , 1 ，1.
+After 19600 training step(s),loss on training batch is 0.0107344.The batch test accuracy = 1 , 1 ，1.
+After 19700 training step(s),loss on training batch is 1.05498.The batch test accuracy = 1 , 1 ，1.
+After 19800 training step(s),loss on training batch is 0.11998.The batch test accuracy = 1 , 1 ，1.
+After 19900 training step(s),loss on training batch is 0.0283664.The batch test accuracy = 1 , 1 ，1.
+After 20000 training step(s),loss on training batch is 0.0874362.The batch test accuracy = 1 , 1 ，1.
+After 20100 training step(s),loss on training batch is 0.249446.The batch test accuracy = 1 , 1 ，1.
+After 20200 training step(s),loss on training batch is 1.35699.The batch test accuracy = 0.992188 , 1 ，1.
+After 20300 training step(s),loss on training batch is 4.43009.The batch test accuracy = 1 , 1 ，1.
+After 20400 training step(s),loss on training batch is 0.0430335.The batch test accuracy = 1 , 1 ，1.
+After 20500 training step(s),loss on training batch is 0.0114328.The batch test accuracy = 1 , 1 ，1.
+After 20600 training step(s),loss on training batch is 2.8419.The batch test accuracy = 0.992188 , 1 ，1.
+After 20700 training step(s),loss on training batch is 0.0841663.The batch test accuracy = 1 , 1 ，1.
+After 20800 training step(s),loss on training batch is 1.93984.The batch test accuracy = 1 , 1 ，1.
+After 20900 training step(s),loss on training batch is 0.175137.The batch test accuracy = 1 , 1 ，1.
+After 21000 training step(s),loss on training batch is 1.37311.The batch test accuracy = 1 , 1 ，1.
+After 21100 training step(s),loss on training batch is 0.0584372.The batch test accuracy = 1 , 1 ，1.
+After 21200 training step(s),loss on training batch is 2.3347.The batch test accuracy = 1 , 1 ，1.
+After 21300 training step(s),loss on training batch is 2.1161.The batch test accuracy = 1 , 1 ，1.
+After 21400 training step(s),loss on training batch is 0.317939.The batch test accuracy = 0.992188 , 1 ，1.
+After 21500 training step(s),loss on training batch is 0.296658.The batch test accuracy = 1 , 1 ，1.
+After 21600 training step(s),loss on training batch is 2.7582.The batch test accuracy = 1 , 1 ，1.
+After 21700 training step(s),loss on training batch is 2.34897.The batch test accuracy = 1 , 1 ，1.
+After 21800 training step(s),loss on training batch is 0.298129.The batch test accuracy = 1 , 1 ，1.
+After 21900 training step(s),loss on training batch is 0.0724363.The batch test accuracy = 1 , 1 ，1.
+After 22000 training step(s),loss on training batch is 1.87788.The batch test accuracy = 1 , 1 ，1.
+After 22100 training step(s),loss on training batch is 0.223699.The batch test accuracy = 1 , 1 ，1.
+After 22200 training step(s),loss on training batch is 0.211808.The batch test accuracy = 1 , 1 ，1.
+After 22300 training step(s),loss on training batch is 0.552056.The batch test accuracy = 1 , 1 ，1.
+Interrupted on request...
+Train finished...
+From /home/archlab/AI/simple-cr/data.py:58: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+From /home/archlab/AI/simple-cr/models/basiccnn3.py:53: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+From /home/archlab/AI/simple-cr/models/basiccnn3.py:37: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/archlab/AI/simple-cr/models/basiccnn3.py:119: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+Large dropout rate: 0.7 (>0.5). In TensorFlow 2.x, dropout() uses dropout rate instead of keep_prob. Please ensure that this is intended.
+From /home/archlab/AI/simple-cr/train.py:93: The name tf.log is deprecated. Please use tf.math.log instead.
+
+From /home/archlab/AI/simple-cr/train.py:95: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+From /home/archlab/AI/simple-cr/train.py:97: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+From /home/archlab/AI/simple-cr/train.py:100: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+From /home/archlab/AI/simple-cr/train.py:104: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+From /home/archlab/AI/simple-cr/train.py:106: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+From /home/archlab/AI/simple-cr/train.py:107: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+From /home/archlab/miniconda3/envs/tf14/lib/python3.7/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+Restoring parameters from ./checkpoint_x2/trainnum_30000_-0
+Resume training ... Start from step 0 / 30000 .
+From /home/archlab/AI/simple-cr/train.py:119: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+`tf.train.start_queue_runners()` was called when no queue runners were defined. You can safely remove the call to this deprecated function.
+After 0 training step(s),loss on training batch is 2.90021.The batch test accuracy = 1 , 1 ，1.
+After 100 training step(s),loss on training batch is 0.0656751.The batch test accuracy = 1 , 1 ，1.
+After 200 training step(s),loss on training batch is 0.287015.The batch test accuracy = 1 , 1 ，1.
+After 300 training step(s),loss on training batch is 0.0437596.The batch test accuracy = 0.992188 , 1 ，1.
+After 400 training step(s),loss on training batch is 0.285343.The batch test accuracy = 1 , 1 ，1.
+After 500 training step(s),loss on training batch is 0.364435.The batch test accuracy = 0.992188 , 1 ，1.
+After 600 training step(s),loss on training batch is 0.0446317.The batch test accuracy = 0.992188 , 1 ，1.
+After 700 training step(s),loss on training batch is 0.266265.The batch test accuracy = 1 , 1 ，1.
+After 800 training step(s),loss on training batch is 0.0292017.The batch test accuracy = 1 , 1 ，1.
+After 900 training step(s),loss on training batch is 0.324963.The batch test accuracy = 0.992188 , 1 ，1.
+After 1000 training step(s),loss on training batch is 0.294576.The batch test accuracy = 1 , 1 ，1.
+After 1100 training step(s),loss on training batch is 2.03156.The batch test accuracy = 0.992188 , 1 ，1.
+After 1200 training step(s),loss on training batch is 0.0602718.The batch test accuracy = 1 , 1 ，1.
+After 1300 training step(s),loss on training batch is 0.584726.The batch test accuracy = 1 , 1 ，1.
+After 1400 training step(s),loss on training batch is 0.753686.The batch test accuracy = 1 , 1 ，1.
+After 1500 training step(s),loss on training batch is 0.0482593.The batch test accuracy = 1 , 1 ，1.
+After 1600 training step(s),loss on training batch is 0.136743.The batch test accuracy = 1 , 1 ，1.
+After 1700 training step(s),loss on training batch is 0.0353916.The batch test accuracy = 1 , 1 ，1.
+After 1800 training step(s),loss on training batch is 0.287827.The batch test accuracy = 1 , 1 ，1.
+After 1900 training step(s),loss on training batch is 0.00539766.The batch test accuracy = 1 , 1 ，1.
+After 2000 training step(s),loss on training batch is 0.903537.The batch test accuracy = 1 , 1 ，1.
+After 2100 training step(s),loss on training batch is 0.0374779.The batch test accuracy = 1 , 1 ，1.
+After 2200 training step(s),loss on training batch is 0.736876.The batch test accuracy = 1 , 1 ，1.
+After 2300 training step(s),loss on training batch is 0.0250314.The batch test accuracy = 1 , 1 ，1.
+After 2400 training step(s),loss on training batch is 0.69274.The batch test accuracy = 1 , 1 ，1.
+After 2500 training step(s),loss on training batch is 0.176654.The batch test accuracy = 1 , 1 ，1.
+After 2600 training step(s),loss on training batch is 1.43791.The batch test accuracy = 1 , 1 ，1.
+After 2700 training step(s),loss on training batch is 0.550969.The batch test accuracy = 1 , 1 ，1.
+After 2800 training step(s),loss on training batch is 0.124468.The batch test accuracy = 1 , 1 ，1.
+After 2900 training step(s),loss on training batch is 1.03856.The batch test accuracy = 1 , 1 ，1.
+After 3000 training step(s),loss on training batch is 0.0638254.The batch test accuracy = 1 , 1 ，1.
+After 3100 training step(s),loss on training batch is 0.0845968.The batch test accuracy = 1 , 1 ，1.
+After 3200 training step(s),loss on training batch is 0.165511.The batch test accuracy = 1 , 1 ，1.
+After 3300 training step(s),loss on training batch is 0.157977.The batch test accuracy = 0.992188 , 1 ，1.
+After 3400 training step(s),loss on training batch is 0.0319896.The batch test accuracy = 1 , 1 ，1.
+After 3500 training step(s),loss on training batch is 0.254727.The batch test accuracy = 1 , 1 ，1.
+After 3600 training step(s),loss on training batch is 0.122101.The batch test accuracy = 1 , 1 ，1.
+After 3700 training step(s),loss on training batch is 1.75582.The batch test accuracy = 1 , 1 ，1.
+After 3800 training step(s),loss on training batch is 0.042654.The batch test accuracy = 1 , 1 ，1.
+After 3900 training step(s),loss on training batch is 0.00441618.The batch test accuracy = 1 , 1 ，1.
+After 4000 training step(s),loss on training batch is 0.154778.The batch test accuracy = 1 , 1 ，1.
+After 4100 training step(s),loss on training batch is 0.00805738.The batch test accuracy = 1 , 1 ，1.
+After 4200 training step(s),loss on training batch is 0.428892.The batch test accuracy = 1 , 1 ，1.
+After 4300 training step(s),loss on training batch is 0.0154255.The batch test accuracy = 1 , 1 ，1.
+After 4400 training step(s),loss on training batch is 0.0349152.The batch test accuracy = 1 , 1 ，1.
+After 4500 training step(s),loss on training batch is 0.449029.The batch test accuracy = 1 , 1 ，1.
+After 4600 training step(s),loss on training batch is 0.76838.The batch test accuracy = 1 , 1 ，1.
+After 4700 training step(s),loss on training batch is 0.0830912.The batch test accuracy = 0.992188 , 1 ，1.
+After 4800 training step(s),loss on training batch is 0.0393456.The batch test accuracy = 1 , 1 ，1.
+After 4900 training step(s),loss on training batch is 0.0722971.The batch test accuracy = 1 , 1 ，1.
+After 5000 training step(s),loss on training batch is 0.0548332.The batch test accuracy = 0.992188 , 1 ，1.
+After 5100 training step(s),loss on training batch is 0.0108351.The batch test accuracy = 1 , 1 ，1.
+After 5200 training step(s),loss on training batch is 2.1541.The batch test accuracy = 1 , 1 ，1.
+After 5300 training step(s),loss on training batch is 0.050248.The batch test accuracy = 1 , 1 ，1.
+After 5400 training step(s),loss on training batch is 0.0344674.The batch test accuracy = 1 , 1 ，1.
+After 5500 training step(s),loss on training batch is 0.0554431.The batch test accuracy = 1 , 1 ，1.
+After 5600 training step(s),loss on training batch is 0.0985771.The batch test accuracy = 1 , 1 ，1.
+After 5700 training step(s),loss on training batch is 0.384969.The batch test accuracy = 1 , 1 ，1.
+After 5800 training step(s),loss on training batch is 0.270428.The batch test accuracy = 1 , 1 ，1.
+After 5900 training step(s),loss on training batch is 0.142969.The batch test accuracy = 1 , 1 ，1.
+After 6000 training step(s),loss on training batch is 0.0938029.The batch test accuracy = 1 , 1 ，1.
+After 6100 training step(s),loss on training batch is 0.0647873.The batch test accuracy = 1 , 1 ，1.
+After 6200 training step(s),loss on training batch is 0.287545.The batch test accuracy = 1 , 1 ，1.
+After 6300 training step(s),loss on training batch is 0.518922.The batch test accuracy = 1 , 1 ，1.
+After 6400 training step(s),loss on training batch is 2.07443.The batch test accuracy = 1 , 1 ，1.
+After 6500 training step(s),loss on training batch is 0.0651239.The batch test accuracy = 1 , 1 ，1.
+After 6600 training step(s),loss on training batch is 0.0113308.The batch test accuracy = 1 , 1 ，1.
+After 6700 training step(s),loss on training batch is 0.0709011.The batch test accuracy = 1 , 1 ，1.
+After 6800 training step(s),loss on training batch is 0.0167782.The batch test accuracy = 1 , 1 ，1.
+After 6900 training step(s),loss on training batch is 0.0624987.The batch test accuracy = 1 , 1 ，1.
+After 7000 training step(s),loss on training batch is 0.072164.The batch test accuracy = 1 , 1 ，1.
+After 7100 training step(s),loss on training batch is 0.0953515.The batch test accuracy = 1 , 1 ，1.
+After 7200 training step(s),loss on training batch is 0.683326.The batch test accuracy = 1 , 1 ，1.
+After 7300 training step(s),loss on training batch is 0.860281.The batch test accuracy = 1 , 1 ，1.
+Interrupted on request...
+Train finished...
