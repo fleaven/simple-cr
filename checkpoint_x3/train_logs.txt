@@ -1,0 +1,63 @@
+From /home/archlab/AI/simple-cr/data.py:58: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+From /home/archlab/AI/simple-cr/models/basiccnn3.py:53: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+From /home/archlab/AI/simple-cr/models/basiccnn3.py:37: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/archlab/AI/simple-cr/models/basiccnn3.py:119: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+Large dropout rate: 0.7 (>0.5). In TensorFlow 2.x, dropout() uses dropout rate instead of keep_prob. Please ensure that this is intended.
+From /home/archlab/AI/simple-cr/train.py:93: The name tf.log is deprecated. Please use tf.math.log instead.
+
+From /home/archlab/AI/simple-cr/train.py:95: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+From /home/archlab/AI/simple-cr/train.py:97: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+From /home/archlab/AI/simple-cr/train.py:100: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+From /home/archlab/AI/simple-cr/train.py:104: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+From /home/archlab/AI/simple-cr/train.py:106: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+From /home/archlab/AI/simple-cr/train.py:107: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+From /home/archlab/AI/simple-cr/data.py:58: DatasetV1.make_one_shot_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_one_shot_iterator(dataset)`.
+From /home/archlab/AI/simple-cr/models/basiccnn3.py:53: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+From /home/archlab/AI/simple-cr/models/basiccnn3.py:37: calling reduce_sum_v1 (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+From /home/archlab/AI/simple-cr/models/basiccnn3.py:119: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+Large dropout rate: 0.7 (>0.5). In TensorFlow 2.x, dropout() uses dropout rate instead of keep_prob. Please ensure that this is intended.
+From /home/archlab/AI/simple-cr/train.py:93: The name tf.log is deprecated. Please use tf.math.log instead.
+
+From /home/archlab/AI/simple-cr/train.py:95: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+From /home/archlab/AI/simple-cr/train.py:97: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+From /home/archlab/AI/simple-cr/train.py:100: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+From /home/archlab/AI/simple-cr/train.py:104: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+From /home/archlab/AI/simple-cr/train.py:106: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+From /home/archlab/AI/simple-cr/train.py:107: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+From /home/archlab/AI/simple-cr/train.py:119: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+`tf.train.start_queue_runners()` was called when no queue runners were defined. You can safely remove the call to this deprecated function.
+After 0 training step(s),loss on training batch is 455.117.The batch test accuracy = 0.0078125 , 0.09375 ，0.25.
+After 100 training step(s),loss on training batch is 440.532.The batch test accuracy = 0.0234375 , 0.1875 ，0.296875.
+After 200 training step(s),loss on training batch is 425.278.The batch test accuracy = 0.148438 , 0.421875 ，0.625.
+After 300 training step(s),loss on training batch is 279.873.The batch test accuracy = 0.335938 , 0.773438 ，0.914062.
+After 400 training step(s),loss on training batch is 194.792.The batch test accuracy = 0.523438 , 0.875 ，0.96875.
+Interrupted on request...
+Train finished...
