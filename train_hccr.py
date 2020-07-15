@@ -18,7 +18,7 @@ x3 = trainner('./checkpoint_x3', '../ocr-dataset/hwdb/minitrain', basiccnn3)
 basic = trainner('./checkpoint_basic', '../ocr-dataset/hwdb/minitrain', basiccnn)
 hccr = trainner('./checkpoint', '../ocr-dataset/hwdb/minitrain', hccr_cnnnet)
 
-tr = x3
+tr = hccr
 
 import tensorflow as tf
 from signal import SIGINT, SIGTERM
@@ -57,11 +57,11 @@ resume=True #是否继续训练模型？
 losslist = []
 accuracy = []
 '''
-#os.environ['CUDA_VISIBLE_DEVICES']=gpunum
+os.environ['CUDA_VISIBLE_DEVICES']=gpunum
 
 
 label_batch, image_batch = data.load_data(tr.train_dir, buffer_size, batch_size, channels)
-regularizer=None #tf.contrib.layers.l2_regularizer(regular_rate)
+regularizer=tf.contrib.layers.l2_regularizer(regular_rate)
 
 logits, tt=tr.process(image_batch,train=True,regularizer=regularizer,channels=channels)
 
@@ -69,31 +69,26 @@ global_step=tf.Variable(0,trainable=False)
 
 prob_batch = tf.nn.softmax(logits)
 accuracy_top1_batch = tf.reduce_mean(tf.cast(tf.nn.in_top_k(prob_batch, label_batch, 1), tf.float32))
-accuracy_top5_batch = tf.reduce_mean(tf.cast(tf.nn.in_top_k(prob_batch, label_batch, 5), tf.float32))
-accuracy_top10_batch = tf.reduce_mean(tf.cast(tf.nn.in_top_k(prob_batch, label_batch, 10), tf.float32))
+accuracy_top5_batch = tf.reduce_mean(tf.cast(tf.nn.in_top_k(prob_batch, label_batch, 2), tf.float32))
+accuracy_top10_batch = tf.reduce_mean(tf.cast(tf.nn.in_top_k(prob_batch, label_batch, 3), tf.float32))
 
-#update_op = tf.get_collection(tf.GraphKeys.UPDATE_OPS)
+update_op = tf.get_collection(tf.GraphKeys.UPDATE_OPS)
 
-#variable_ave = tf.train.ExponentialMovingAverage(0.99,global_step)
-#ave_op = variable_ave.apply(tf.trainable_variables())
+variable_ave = tf.train.ExponentialMovingAverage(0.99,global_step)
+ave_op = variable_ave.apply(tf.trainable_variables())
 
-#cross_entropy_mean = tf.reduce_mean(tf.nn.sparse_softmax_cross_entropy_with_logits(logits=logits, labels=label_batch))
-#if regularizer==None:
-#    loss=cross_entropy_mean
-#else:
-#    loss=cross_entropy_mean+tf.add_n(tf.get_collection('losses'))
+cross_entropy_mean = tf.reduce_mean(tf.nn.sparse_softmax_cross_entropy_with_logits(logits=logits, labels=label_batch))
+if regularizer==None:
+    loss=cross_entropy_mean
+else:
+    loss=cross_entropy_mean+tf.add_n(tf.get_collection('losses'))
 
-#lr=tf.train.exponential_decay(lr_base,global_step,lr_steps,lr_decay,staircase=True)
-#train_step = tf.train.MomentumOptimizer(learning_rate=lr,momentum=momentum)
-#with tf.control_dependencies(update_op):
-#    grads = train_step.compute_gradients(loss)
-#    train_op = train_step.apply_gradients(grads, global_step=global_step)
+lr=tf.train.exponential_decay(lr_base,global_step,lr_steps,lr_decay,staircase=True)
+train_step = tf.train.MomentumOptimizer(learning_rate=lr,momentum=momentum)
+with tf.control_dependencies(update_op):
+    grads = train_step.compute_gradients(loss)
+    train_op = train_step.apply_gradients(grads, global_step=global_step)
 
-label_batch_onehot = tf.one_hot(label_batch, logits.get_shape()[1],on_value=1.0)
-cross_entropy = -tf.reduce_sum(label_batch_onehot*tf.log(prob_batch+1e-9))
-loss=cross_entropy
-train_step = tf.train.GradientDescentOptimizer(2e-5).minimize(cross_entropy)
-    
 var_list = tf.trainable_variables()
 if global_step is not None:
     var_list.append(global_step)
@@ -121,8 +116,7 @@ with tf.Session() as sess:
     with lb.Uninterrupt(sigs=[SIGINT, SIGTERM], verbose=True) as u:
       for i in range(start_step,train_nums):
 
-        _,loss_value,step, lb, im, prob, logs, lb_oneh, ttt=sess.run([train_step,loss,global_step,label_batch,image_batch,prob_batch,logits,label_batch_onehot, tt])
-        im = im.reshape((-1, 96,96))
+        _,loss_value,step=sess.run([train_op,loss,global_step])
         if i % print_steps == 0:
             top1,top5,top10=sess.run([accuracy_top1_batch,accuracy_top5_batch,accuracy_top10_batch])
             logger.info("After %d training step(s),loss on training batch is %g.The batch test accuracy = %g , %g ，%g."%(i,loss_value,top1,top5,top10))

@@ -23,7 +23,7 @@ x3 = tester('./checkpoint_x3', '../ocr-dataset/hwdb/minitest', basiccnn3)
 basic = tester('./checkpoint_basic', '../ocr-dataset/hwdb/minitest', basiccnn)
 hccr = tester('./checkpoint', '../ocr-dataset/hwdb/minitest', hccr_cnnnet)
 
-tr = x3
+tr = hccr
 
 logger = logging.getLogger()
 logger.setLevel(level = logging.INFO)
@@ -31,13 +31,13 @@ loghandler = logging.FileHandler(tr.save_path+"/test_logs.txt")
 logger.addHandler(loghandler)
 logger.addHandler(logging.StreamHandler())
 
-gpunum='0'
+gpunum='2'
 
 batch_size = 128
 img_size=[96,96]
 channels=1
 
-#os.environ['CUDA_VISIBLE_DEVICES']=gpunum
+os.environ['CUDA_VISIBLE_DEVICES']=gpunum
 with tf.Graph().as_default() as g:
 
     label_batch, image_batch = data.load_data(tr.test_dir, 0, batch_size, channels)
@@ -46,8 +46,8 @@ with tf.Graph().as_default() as g:
     logits,tt=tr.process(image_batch,train=False,regularizer=None,channels=channels)
     prob_batch = tf.nn.softmax(logits)
     accuracy_top1_batch = tf.reduce_mean(tf.cast(tf.nn.in_top_k(prob_batch, label_batch, 1), tf.float32))
-    accuracy_top5_batch = tf.reduce_mean(tf.cast(tf.nn.in_top_k(prob_batch, label_batch, 5), tf.float32))
-    accuracy_top10_batch = tf.reduce_mean(tf.cast(tf.nn.in_top_k(prob_batch, label_batch, 10), tf.float32))
+    accuracy_top5_batch = tf.reduce_mean(tf.cast(tf.nn.in_top_k(prob_batch, label_batch, 2), tf.float32))
+    accuracy_top10_batch = tf.reduce_mean(tf.cast(tf.nn.in_top_k(prob_batch, label_batch, 3), tf.float32))
     '''
     variable_ave = tf.train.ExponentialMovingAverage(0.99)
     variables_to_restore = variable_ave.variables_to_restore()
@@ -72,7 +72,7 @@ with tf.Graph().as_default() as g:
                     top5sum=top5sum+top5
                     top10sum=top10sum+top10
                     if iternum%500==0:
-                        logger.info("The current test accuracy (in %d pics) = top1: %g , top5: %g ，top10: %g." % (iternum*batch_size,top1sum/iternum,top5sum/iternum,top10sum/iternum))
+                        logger.info("The current test accuracy (in %d pics) = top1: %g , top2: %g ，top3: %g." % (iternum*batch_size,top1sum/iternum,top5sum/iternum,top10sum/iternum))
                 except tf.errors.OutOfRangeError:
                     logger.info("The final test accuracy (in %d pics) = top1: %g , top5: %g ，top10: %g." % (iternum*batch_size,top1sum/iternum,top5sum/iternum,top10sum/iternum))
                     logger.info('Test finished...')

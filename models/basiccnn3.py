@@ -99,7 +99,7 @@ def basiccnn3(input_tensor,train,regularizer,channels):
 
 	with tf.name_scope("layer-ss0"): #48*4
 		kV = tf.constant(100.)
-		bV = tf.constant(0.4)
+		bV = tf.constant(30.)
 		x_bin, x_total = SumDiff(tf.sigmoid((h_pool3 - bV) * kV), 1)  # 对比度最大化后处理
 
 	pool_shape = h_pool4.get_shape().as_list()
@@ -126,4 +126,4 @@ def basiccnn3(input_tensor,train,regularizer,channels):
 		if regularizer != None:
 			tf.add_to_collection('losses', regularizer(w_fc2))
 
-	return tf.matmul(h_fc1_drop, w_fc2) + b_fc2, h_pool3
+	return tf.matmul(h_fc1_drop, w_fc2) + b_fc2, x_total
