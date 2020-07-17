@@ -1,3 +1,4 @@
-# HCCR-HWDB-tensorflow
-Reproduction of paper:<br>
-　　[Building fast and compact convolutional neural networks for offline handwritten Chinese character recognition](https://arxiv.org/abs/1702.07975)
+# HCCR-SL
+summarized layer
+test:
+分别测试在每一层后增加统计层（完整统计层）

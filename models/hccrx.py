@@ -13,6 +13,31 @@ def parametric_relu(_x):
   neg = alphas * (_x - abs(_x)) * 0.5
   return pos + neg
 
+
+def adjnt_differ(im, dims):
+	if dims==0:
+		im2 = tf.concat([im[0:1], im[:-1]], dims)
+	elif dims==1:
+		im2 = tf.concat([im[:, 0:1], im[:, :-1]], dims)
+	elif dims==2:
+		im2 = tf.concat([im[:, :, 0:1], im[:,:,:-1]], dims)
+	elif dims==3:
+		im2 = tf.concat([im[:, :, :, 0:1], im[:, :, :, -1]], dims)
+	else:
+		raise ValueError('Invalid adjnt_differ dims %d' % dims)
+	diff = tf.nn.relu(im - im2)
+	return tf.reduce_mean(diff, dims)
+
+def SumDiff(data, axis):
+	data1 = tf.expand_dims(data, axis+2)
+	v_sum = tf.reduce_mean(data1, axis)
+	h_sum = tf.reduce_mean(data1, axis+1)
+	v_diff = adjnt_differ(data1, axis)
+	h_diff = adjnt_differ(data1, axis+1)
+	sd = tf.concat([v_sum, h_sum, v_diff, h_diff], axis+1)
+	return sd, tf.reduce_sum(sd, axis, keep_dims=True)
+
+
 def hccr_cnnnet(input_tensor,train,regularizer,channels):
  
     conv1_deep=96
@@ -23,7 +48,9 @@ def hccr_cnnnet(input_tensor,train,regularizer,channels):
     conv6_deep=384
     conv7_deep=384
     fc1_num=1024
-    
+
+
+
     with tf.variable_scope('layer0-bn'): 
         bn0 = tf.layers.batch_normalization(input_tensor,training=train,name='bn0')
     
@@ -96,14 +123,22 @@ def hccr_cnnnet(input_tensor,train,regularizer,channels):
         prelu7 = parametric_relu(bn_conv7)
         
     with tf.name_scope("layer12-pool5"): 
-        pool5 = tf.nn.max_pool(prelu7, ksize=[1, 3, 3, 1], strides=[1, 2, 2, 1], padding='SAME')    
-        
+        pool5 = tf.nn.max_pool(prelu7, ksize=[1, 3, 3, 1], strides=[1, 2, 2, 1], padding='SAME')
+
+    with tf.name_scope("layer-ss0"):  # 48*4
+        kV = tf.constant(100.)
+        bV = tf.constant(0.3)
+        x_bin, x_total = SumDiff(tf.sigmoid((bn0 - bV) * kV), 1)  # 对比度最大化后处理
+        print("----------------ss->bn0")
+
     pool_shape = pool5.get_shape().as_list()
-    nodes = pool_shape[1] * pool_shape[2] * pool_shape[3] 
-    reshaped = tf.reshape(pool5, [-1, nodes])
+    nodes = pool_shape[1] * pool_shape[2] * pool_shape[3]
+    x_shape = x_bin.get_shape().as_list()
+    x_nodes = x_shape[1] * x_shape[2] * x_shape[3]
+    reshaped = tf.concat([tf.reshape(pool5, [-1, nodes]), tf.reshape(x_bin, [-1, x_nodes]), tf.reshape(x_total, [-1, 4 * channels])],1)
 
     with tf.variable_scope('layer13-fc1'):
-        fc1_weights = tf.get_variable("weight", [nodes, fc1_num],initializer=tf.truncated_normal_initializer(stddev=stddev))
+        fc1_weights = tf.get_variable("weight", [nodes+x_nodes+4*channels, fc1_num],initializer=tf.truncated_normal_initializer(stddev=stddev))
         if regularizer != None:
             tf.add_to_collection('losses', regularizer(fc1_weights)) 
         fc1_biases = tf.get_variable("bias", [fc1_num], initializer=tf.constant_initializer(0.1))
