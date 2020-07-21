@@ -47,6 +47,9 @@ def hccrx(input_tensor,train,regularizer,channels):
     conv5_deep=256
     conv6_deep=384
     conv7_deep=384
+    xconv1_deep=160
+    xconv2_deep=256
+    xconv3_deep=256
     fc1_num=1024
 
 
@@ -127,17 +130,29 @@ def hccrx(input_tensor,train,regularizer,channels):
 
     with tf.name_scope("layer-ss0"):  # 48*4
         kV = tf.constant(100.)
-        bV = tf.constant(0.3)
-        x_bin, x_total = SumDiff(tf.sigmoid((bn_conv6 - bV) * kV), 1)  # 对比度最大化后处理
+        bV = tf.constant(0.1)
+        x_bin, x_total = SumDiff(tf.sigmoid((pool2 - bV) * kV), 1)  # 对比度最大化后处理
+
+    with tf.name_scope("layer-ss1"):
+        xconv1_weights = tf.get_variable("weight", [3, 4, conv2_deep, xconv1_deep],
+                                        initializer=tf.truncated_normal_initializer(stddev=stddev))
+        xconv1_biases = tf.get_variable("bias", [xconv1_deep], initializer=tf.constant_initializer(0.0))
+        x_conv1 = tf.nn.conv2d(x_bin, xconv1_weights, strides=[1, 1, 1, 1], padding='SAME')
+        bn_xconv1 = tf.layers.batch_normalization(tf.nn.bias_add(x_conv1, xconv1_biases), training=train, name='bn_xconv1')
+        prelux1 = parametric_relu(bn_xconv1)
+
+    with tf.name_scope("layer12-pool5"):
+        xpool1 = tf.nn.max_pool(prelux1, ksize=[1, 3, 3, 1], strides=[1, 2, 1, 1], padding='SAME')
+
 
     pool_shape = pool5.get_shape().as_list()
     nodes = pool_shape[1] * pool_shape[2] * pool_shape[3]
-    x_shape = x_bin.get_shape().as_list()
+    x_shape = xpool1.get_shape().as_list()
     x_nodes = x_shape[1] * x_shape[2] * x_shape[3]
-    reshaped = tf.concat([tf.reshape(pool5, [-1, nodes]), tf.reshape(x_bin, [-1, x_nodes]), tf.reshape(x_total, [-1, 4 * conv6_deep])],1)
+    reshaped = tf.concat([tf.reshape(pool5, [-1, nodes]), tf.reshape(xpool1, [-1, x_nodes]), tf.reshape(x_total, [-1, 4 * conv2_deep])],1)
 
     with tf.variable_scope('layer13-fc1'):
-        fc1_weights = tf.get_variable("weight", [nodes+x_nodes+4*conv6_deep, fc1_num],initializer=tf.truncated_normal_initializer(stddev=stddev))
+        fc1_weights = tf.get_variable("weight", [nodes+x_nodes+4*conv2_deep, fc1_num],initializer=tf.truncated_normal_initializer(stddev=stddev))
         if regularizer != None:
             tf.add_to_collection('losses', regularizer(fc1_weights)) 
         fc1_biases = tf.get_variable("bias", [fc1_num], initializer=tf.constant_initializer(0.1))
