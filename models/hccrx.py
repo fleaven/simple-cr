@@ -38,7 +38,7 @@ def SumDiff(data, axis):
 	return sd, tf.reduce_sum(sd, axis, keep_dims=True)
 
 
-def hccr_cnnnet(input_tensor,train,regularizer,channels):
+def hccrx(input_tensor,train,regularizer,channels):
  
     conv1_deep=96
     conv2_deep=128
@@ -128,17 +128,16 @@ def hccr_cnnnet(input_tensor,train,regularizer,channels):
     with tf.name_scope("layer-ss0"):  # 48*4
         kV = tf.constant(100.)
         bV = tf.constant(0.3)
-        x_bin, x_total = SumDiff(tf.sigmoid((bn0 - bV) * kV), 1)  # 对比度最大化后处理
-        print("----------------ss->bn0")
+        x_bin, x_total = SumDiff(tf.sigmoid((bn_conv6 - bV) * kV), 1)  # 对比度最大化后处理
 
     pool_shape = pool5.get_shape().as_list()
     nodes = pool_shape[1] * pool_shape[2] * pool_shape[3]
     x_shape = x_bin.get_shape().as_list()
     x_nodes = x_shape[1] * x_shape[2] * x_shape[3]
-    reshaped = tf.concat([tf.reshape(pool5, [-1, nodes]), tf.reshape(x_bin, [-1, x_nodes]), tf.reshape(x_total, [-1, 4 * channels])],1)
+    reshaped = tf.concat([tf.reshape(pool5, [-1, nodes]), tf.reshape(x_bin, [-1, x_nodes]), tf.reshape(x_total, [-1, 4 * conv6_deep])],1)
 
     with tf.variable_scope('layer13-fc1'):
-        fc1_weights = tf.get_variable("weight", [nodes+x_nodes+4*channels, fc1_num],initializer=tf.truncated_normal_initializer(stddev=stddev))
+        fc1_weights = tf.get_variable("weight", [nodes+x_nodes+4*conv6_deep, fc1_num],initializer=tf.truncated_normal_initializer(stddev=stddev))
         if regularizer != None:
             tf.add_to_collection('losses', regularizer(fc1_weights)) 
         fc1_biases = tf.get_variable("bias", [fc1_num], initializer=tf.constant_initializer(0.1))
@@ -153,5 +152,139 @@ def hccr_cnnnet(input_tensor,train,regularizer,channels):
             tf.add_to_collection('losses', regularizer(fc2_weights))
         fc2_biases = tf.get_variable("bias", [NUM_LABELS], initializer=tf.constant_initializer(0.1))
         logit = tf.matmul(fc1, fc2_weights) + fc2_biases
-    
-    return logit, None
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    return logit, bn_conv6

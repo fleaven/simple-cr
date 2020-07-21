@@ -10,6 +10,7 @@ from models import basiccnn
 from models import basiccnn1
 from models import basiccnn2
 from models import basiccnn3
+from models import hccrx
 
 class tester:
     def __init__(self, savep, trainp,proc):
@@ -22,16 +23,17 @@ x2 = tester('./checkpoint_x2', '../ocr-dataset/hwdb/minitest', basiccnn2)
 x3 = tester('./checkpoint_x3', '../ocr-dataset/hwdb/minitest', basiccnn3)
 basic = tester('./checkpoint_basic', '../ocr-dataset/hwdb/minitest', basiccnn)
 hccr = tester('./checkpoint', '../ocr-dataset/hwdb/minitest', hccr_cnnnet)
+hccrx = tester('./checkpoint_hccrx', '../ocr-dataset/hwdb/minitest', hccrx)
 
-tr = hccr
+tr = hccrx
 
 logger = logging.getLogger()
-logger.setLevel(level = logging.INFO)
+logger.setLevel(level = logging.DEBUG)
 loghandler = logging.FileHandler(tr.save_path+"/test_logs.txt")
 logger.addHandler(loghandler)
 logger.addHandler(logging.StreamHandler())
 
-gpunum='2'
+gpunum='3'
 
 batch_size = 128
 img_size=[96,96]
@@ -53,7 +55,7 @@ with tf.Graph().as_default() as g:
     variables_to_restore = variable_ave.variables_to_restore()
     '''
     saver=tf.train.Saver()
-    
+    logger.debug("----------------ss->bn_conv6")
     with tf.Session() as sess:
 
         ckpt = tf.train.get_checkpoint_state(tr.save_path)
@@ -66,16 +68,16 @@ with tf.Graph().as_default() as g:
 
             while True:
                 try:
-                    top1,top5,top10 = sess.run([accuracy_top1_batch,accuracy_top5_batch,accuracy_top10_batch])
+                    top1,top5,top10, pb = sess.run([accuracy_top1_batch,accuracy_top5_batch,accuracy_top10_batch,prob_batch])
                     iternum=iternum+1
                     top1sum=top1sum+top1
                     top5sum=top5sum+top5
                     top10sum=top10sum+top10
                     if iternum%500==0:
-                        logger.info("The current test accuracy (in %d pics) = top1: %g , top2: %g ，top3: %g." % (iternum*batch_size,top1sum/iternum,top5sum/iternum,top10sum/iternum))
+                        logger.debug("The current test accuracy (in %d pics) = top1: %g , top2: %g ，top3: %g." % (iternum*batch_size,top1sum/iternum,top5sum/iternum,top10sum/iternum))
                 except tf.errors.OutOfRangeError:
-                    logger.info("The final test accuracy (in %d pics) = top1: %g , top5: %g ，top10: %g." % (iternum*batch_size,top1sum/iternum,top5sum/iternum,top10sum/iternum))
-                    logger.info('Test finished...')
+                    logger.debug("The final test accuracy (in %d pics) = top1: %g , top5: %g ，top10: %g." % (iternum*batch_size,top1sum/iternum,top5sum/iternum,top10sum/iternum))
+                    logger.debug('Test finished...')
                     break
         else:
-            logger.info('No checkpoint file found !')
+            logger.debug('No checkpoint file found !')

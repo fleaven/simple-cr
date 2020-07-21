@@ -20,7 +20,7 @@ basic = trainner('./checkpoint_basic', '../ocr-dataset/hwdb/minitrain', basiccnn
 hccr = trainner('./checkpoint', '../ocr-dataset/hwdb/minitrain', hccr_cnnnet)
 hccrx = trainner('./checkpoint_hccrx', '../ocr-dataset/hwdb/minitrain', hccrx)
 
-tr = hccr
+tr = hccrx
 
 import tensorflow as tf
 from signal import SIGINT, SIGTERM
@@ -29,7 +29,7 @@ import lbtoolbox as lb
 import logging
 
 logger = logging.getLogger()
-logger.setLevel(level = logging.INFO)
+logger.setLevel(level = logging.DEBUG)
 loghandler = logging.FileHandler(tr.save_path+"/train_logs.txt")
 logger.addHandler(loghandler)
 logger.addHandler(logging.StreamHandler())
@@ -37,7 +37,7 @@ logger.addHandler(logging.StreamHandler())
 
 
 
-gpunum='1'
+gpunum='2'
 lr_base=0.1
 lr_decay=0.1
 momentum=0.9
@@ -107,7 +107,7 @@ with tf.Session() as sess:
             last_checkpoint = tf.train.latest_checkpoint(tr.save_path)
             saver.restore(sess, last_checkpoint)
             start_step = sess.run(global_step)
-            logger.info('Resume training ... Start from step %d / %d .'%(start_step,train_nums))
+            logger.debug('Resume training ... Start from step %d / %d .'%(start_step,train_nums))
             resume=False
     else:
             start_step = 0
@@ -118,10 +118,10 @@ with tf.Session() as sess:
     with lb.Uninterrupt(sigs=[SIGINT, SIGTERM], verbose=True) as u:
       for i in range(start_step,train_nums):
 
-        _,loss_value,step=sess.run([train_op,loss,global_step])
+        _,loss_value,step, ttt=sess.run([train_op,loss,global_step, tt])
         if i % print_steps == 0:
             top1,top5,top10=sess.run([accuracy_top1_batch,accuracy_top5_batch,accuracy_top10_batch])
-            logger.info("After %d training step(s),loss on training batch is %g.The batch test accuracy = %g , %g ，%g."%(i,loss_value,top1,top5,top10))
+            logger.debug("After %d training step(s),loss on training batch is %g.The batch test accuracy = %g , %g ，%g."%(i,loss_value,top1,top5,top10))
             '''
             losslist.append([step,loss_value])
             accuracy.append([step,top1])
@@ -131,7 +131,7 @@ with tf.Session() as sess:
                     saver.save(sess, os.path.join(tr.save_path, model_name), global_step=global_step)
 
         if u.interrupted:
-                    logger.info("Interrupted on request...")
+                    logger.debug("Interrupted on request...")
                     break
                     
     '''              
@@ -147,10 +147,11 @@ with tf.Session() as sess:
           file2.write(acc+'\n')
     file2.close()
     '''
-    
+
+    logger.debug("----------------ss->bn_conv6")
     model_name="trainnum_%d_"%train_nums
     saver.save(sess,os.path.join(tr.save_path,model_name),global_step=global_step)
-    logger.info('Train finished...')
+    logger.debug('Train finished...')
          
     coord.request_stop()
     coord.join(threads)
