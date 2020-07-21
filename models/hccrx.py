@@ -75,7 +75,7 @@ def hccrx(input_tensor,train,regularizer,channels):
 
     with tf.name_scope("layer4-pool2"): 
         pool2 = tf.nn.max_pool(prelu2, ksize=[1, 3, 3, 1], strides=[1, 2, 2, 1], padding='SAME')
-        
+
     with tf.variable_scope("layer5-conv3"):
         conv3_weights = tf.get_variable("weight", [3,3,conv2_deep,conv3_deep],
             initializer=tf.truncated_normal_initializer(stddev=stddev))
